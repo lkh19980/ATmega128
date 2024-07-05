@@ -1,0 +1,278 @@
+
+test01.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  000001b0  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000015c  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000001b0  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000001e0  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000028  00000000  00000000  0000021c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000009a2  00000000  00000000  00000244  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000879  00000000  00000000  00000be6  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000002f6  00000000  00000000  0000145f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000034  00000000  00000000  00001758  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000428  00000000  00000000  0000178c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000000ed  00000000  00000000  00001bb4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000018  00000000  00000000  00001ca1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	58 c0       	rjmp	.+176    	; 0xb6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	56 c0       	rjmp	.+172    	; 0xb6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	54 c0       	rjmp	.+168    	; 0xb6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	52 c0       	rjmp	.+164    	; 0xb6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	50 c0       	rjmp	.+160    	; 0xb6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	4e c0       	rjmp	.+156    	; 0xb6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	4c c0       	rjmp	.+152    	; 0xb6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	4a c0       	rjmp	.+148    	; 0xb6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	48 c0       	rjmp	.+144    	; 0xb6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	46 c0       	rjmp	.+140    	; 0xb6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	44 c0       	rjmp	.+136    	; 0xb6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	42 c0       	rjmp	.+132    	; 0xb6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	40 c0       	rjmp	.+128    	; 0xb6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	3e c0       	rjmp	.+124    	; 0xb6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	3c c0       	rjmp	.+120    	; 0xb6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	3a c0       	rjmp	.+116    	; 0xb6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	38 c0       	rjmp	.+112    	; 0xb6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	36 c0       	rjmp	.+108    	; 0xb6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	34 c0       	rjmp	.+104    	; 0xb6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	32 c0       	rjmp	.+100    	; 0xb6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	30 c0       	rjmp	.+96     	; 0xb6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	2e c0       	rjmp	.+92     	; 0xb6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	2c c0       	rjmp	.+88     	; 0xb6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	2a c0       	rjmp	.+84     	; 0xb6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	28 c0       	rjmp	.+80     	; 0xb6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	26 c0       	rjmp	.+76     	; 0xb6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	24 c0       	rjmp	.+72     	; 0xb6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	22 c0       	rjmp	.+68     	; 0xb6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	20 c0       	rjmp	.+64     	; 0xb6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	1e c0       	rjmp	.+60     	; 0xb6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	1c c0       	rjmp	.+56     	; 0xb6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	1a c0       	rjmp	.+52     	; 0xb6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	18 c0       	rjmp	.+48     	; 0xb6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	16 c0       	rjmp	.+44     	; 0xb6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	ec e5       	ldi	r30, 0x5C	; 92
+  a0:	f1 e0       	ldi	r31, 0x01	; 1
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a0 30       	cpi	r26, 0x00	; 0
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+  b2:	25 d0       	rcall	.+74     	; 0xfe <main>
+  b4:	51 c0       	rjmp	.+162    	; 0x158 <_exit>
+
+000000b6 <__bad_interrupt>:
+  b6:	a4 cf       	rjmp	.-184    	; 0x0 <__vectors>
+
+000000b8 <TogglePinA>:
+#include <avr/delay.h>
+const int __delay_t = 500;
+
+void TogglePinA(int n,int delay) //n : n번째 비트 0-7, delay in ms
+{
+	char b = 1 <<n;
+  b8:	21 e0       	ldi	r18, 0x01	; 1
+  ba:	30 e0       	ldi	r19, 0x00	; 0
+  bc:	a9 01       	movw	r20, r18
+  be:	02 c0       	rjmp	.+4      	; 0xc4 <TogglePinA+0xc>
+  c0:	44 0f       	add	r20, r20
+  c2:	55 1f       	adc	r21, r21
+  c4:	8a 95       	dec	r24
+  c6:	e2 f7       	brpl	.-8      	; 0xc0 <TogglePinA+0x8>
+  c8:	ca 01       	movw	r24, r20
+	PORTA |= b;
+  ca:	9b b3       	in	r25, 0x1b	; 27
+  cc:	98 2b       	or	r25, r24
+  ce:	9b bb       	out	0x1b, r25	; 27
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  d0:	5f ef       	ldi	r21, 0xFF	; 255
+  d2:	29 e6       	ldi	r18, 0x69	; 105
+  d4:	38 e1       	ldi	r19, 0x18	; 24
+  d6:	51 50       	subi	r21, 0x01	; 1
+  d8:	20 40       	sbci	r18, 0x00	; 0
+  da:	30 40       	sbci	r19, 0x00	; 0
+  dc:	e1 f7       	brne	.-8      	; 0xd6 <TogglePinA+0x1e>
+  de:	00 c0       	rjmp	.+0      	; 0xe0 <TogglePinA+0x28>
+  e0:	00 00       	nop
+	_delay_ms(500);
+	PORTA &= ~b;// PORTA의 0번째 비트를 LOW로 출력
+  e2:	9b b3       	in	r25, 0x1b	; 27
+  e4:	80 95       	com	r24
+  e6:	89 23       	and	r24, r25
+  e8:	8b bb       	out	0x1b, r24	; 27
+  ea:	4f ef       	ldi	r20, 0xFF	; 255
+  ec:	59 e6       	ldi	r21, 0x69	; 105
+  ee:	88 e1       	ldi	r24, 0x18	; 24
+  f0:	41 50       	subi	r20, 0x01	; 1
+  f2:	50 40       	sbci	r21, 0x00	; 0
+  f4:	80 40       	sbci	r24, 0x00	; 0
+  f6:	e1 f7       	brne	.-8      	; 0xf0 <TogglePinA+0x38>
+  f8:	00 c0       	rjmp	.+0      	; 0xfa <TogglePinA+0x42>
+  fa:	00 00       	nop
+  fc:	08 95       	ret
+
+000000fe <main>:
+	//DDRA=0xFF;// A Port의 0번째 비트를 출력으로 사용, 나머지는 입력
+	//|= 0이면 원래 값 1이면 무조건 1
+	//&= 0이면 무조건 0 1이면 원래 값
+	//DDRA |=0x01;
+	//DDRA |=0x02;
+	DDRA |=0x07;
+  fe:	8a b3       	in	r24, 0x1a	; 26
+ 100:	87 60       	ori	r24, 0x07	; 7
+ 102:	8a bb       	out	0x1a, r24	; 26
+	//DDRA = 1<<DDRA4;
+	DDRB &= 0xFE;//~0x01;
+ 104:	87 b3       	in	r24, 0x17	; 23
+ 106:	8e 7f       	andi	r24, 0xFE	; 254
+ 108:	87 bb       	out	0x17, r24	; 23
+// 			TogglePinA(2,__delay_t);
+// 		}
+// 		
+//     }
+*/
+	int mode = 0;
+ 10a:	c0 e0       	ldi	r28, 0x00	; 0
+ 10c:	d0 e0       	ldi	r29, 0x00	; 0
+ 10e:	02 c0       	rjmp	.+4      	; 0x114 <main+0x16>
+			break;
+			case 2:
+			TogglePinA(2,__delay_t);
+			break;
+			default:
+			mode = 0;
+ 110:	c0 e0       	ldi	r28, 0x00	; 0
+ 112:	d0 e0       	ldi	r29, 0x00	; 0
+*/
+	int mode = 0;
+	while(1)
+	{
+		//if(PINB & 0x01 == 1) // SW 안눌리면 true
+		if(!(PINB & 0x01 == 1))// SW 눌리면 True
+ 114:	b0 99       	sbic	0x16, 0	; 22
+ 116:	06 c0       	rjmp	.+12     	; 0x124 <main+0x26>
+		{
+			mode++;
+ 118:	21 96       	adiw	r28, 0x01	; 1
+			if(mode >= 3) mode = 0;
+ 11a:	c3 30       	cpi	r28, 0x03	; 3
+ 11c:	d1 05       	cpc	r29, r1
+ 11e:	14 f0       	brlt	.+4      	; 0x124 <main+0x26>
+ 120:	c0 e0       	ldi	r28, 0x00	; 0
+ 122:	d0 e0       	ldi	r29, 0x00	; 0
+		}
+		//mode cannot be 0?
+		switch(mode)
+ 124:	c1 30       	cpi	r28, 0x01	; 1
+ 126:	d1 05       	cpc	r29, r1
+ 128:	59 f0       	breq	.+22     	; 0x140 <main+0x42>
+ 12a:	c2 30       	cpi	r28, 0x02	; 2
+ 12c:	d1 05       	cpc	r29, r1
+ 12e:	71 f0       	breq	.+28     	; 0x14c <main+0x4e>
+ 130:	20 97       	sbiw	r28, 0x00	; 0
+ 132:	71 f7       	brne	.-36     	; 0x110 <main+0x12>
+		{
+			case 0:
+			TogglePinA(0,__delay_t);
+ 134:	64 ef       	ldi	r22, 0xF4	; 244
+ 136:	71 e0       	ldi	r23, 0x01	; 1
+ 138:	80 e0       	ldi	r24, 0x00	; 0
+ 13a:	90 e0       	ldi	r25, 0x00	; 0
+ 13c:	bd df       	rcall	.-134    	; 0xb8 <TogglePinA>
+			break;
+ 13e:	ea cf       	rjmp	.-44     	; 0x114 <main+0x16>
+			case 1:
+			TogglePinA(1,__delay_t);
+ 140:	64 ef       	ldi	r22, 0xF4	; 244
+ 142:	71 e0       	ldi	r23, 0x01	; 1
+ 144:	81 e0       	ldi	r24, 0x01	; 1
+ 146:	90 e0       	ldi	r25, 0x00	; 0
+ 148:	b7 df       	rcall	.-146    	; 0xb8 <TogglePinA>
+			break;
+ 14a:	e4 cf       	rjmp	.-56     	; 0x114 <main+0x16>
+			case 2:
+			TogglePinA(2,__delay_t);
+ 14c:	64 ef       	ldi	r22, 0xF4	; 244
+ 14e:	71 e0       	ldi	r23, 0x01	; 1
+ 150:	82 e0       	ldi	r24, 0x02	; 2
+ 152:	90 e0       	ldi	r25, 0x00	; 0
+ 154:	b1 df       	rcall	.-158    	; 0xb8 <TogglePinA>
+			break;
+ 156:	de cf       	rjmp	.-68     	; 0x114 <main+0x16>
+
+00000158 <_exit>:
+ 158:	f8 94       	cli
+
+0000015a <__stop_program>:
+ 15a:	ff cf       	rjmp	.-2      	; 0x15a <__stop_program>

@@ -1,0 +1,1550 @@
+
+test04-Timer-kitchen.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000018  00800100  00000ba6  00000c3a  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000ba6  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          0000001f  00800118  00800118  00000c52  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000c52  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000c84  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000080  00000000  00000000  00000cc0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000d31  00000000  00000000  00000d40  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000a23  00000000  00000000  00001a71  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   0000085a  00000000  00000000  00002494  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  0000019c  00000000  00000000  00002cf0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000515  00000000  00000000  00002e8c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000004d0  00000000  00000000  000033a1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000060  00000000  00000000  00003871  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	4d c0       	rjmp	.+154    	; 0x9c <__ctors_end>
+   2:	00 00       	nop
+   4:	68 c0       	rjmp	.+208    	; 0xd6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	66 c0       	rjmp	.+204    	; 0xd6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	64 c0       	rjmp	.+200    	; 0xd6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	62 c0       	rjmp	.+196    	; 0xd6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	ea c2       	rjmp	.+1492   	; 0x5ea <__vector_5>
+  16:	00 00       	nop
+  18:	5d c3       	rjmp	.+1722   	; 0x6d4 <__vector_6>
+  1a:	00 00       	nop
+  1c:	ef c3       	rjmp	.+2014   	; 0x7fc <__vector_7>
+  1e:	00 00       	nop
+  20:	5a c0       	rjmp	.+180    	; 0xd6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	58 c0       	rjmp	.+176    	; 0xd6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	56 c0       	rjmp	.+172    	; 0xd6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	54 c0       	rjmp	.+168    	; 0xd6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	52 c0       	rjmp	.+164    	; 0xd6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	50 c0       	rjmp	.+160    	; 0xd6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	b3 c2       	rjmp	.+1382   	; 0x5a0 <__vector_14>
+  3a:	00 00       	nop
+  3c:	4c c0       	rjmp	.+152    	; 0xd6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	4a c0       	rjmp	.+148    	; 0xd6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	48 c0       	rjmp	.+144    	; 0xd6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	46 c0       	rjmp	.+140    	; 0xd6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	44 c0       	rjmp	.+136    	; 0xd6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	42 c0       	rjmp	.+132    	; 0xd6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	40 c0       	rjmp	.+128    	; 0xd6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	3e c0       	rjmp	.+124    	; 0xd6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	3c c0       	rjmp	.+120    	; 0xd6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	3a c0       	rjmp	.+116    	; 0xd6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	38 c0       	rjmp	.+112    	; 0xd6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	36 c0       	rjmp	.+108    	; 0xd6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	34 c0       	rjmp	.+104    	; 0xd6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	32 c0       	rjmp	.+100    	; 0xd6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	30 c0       	rjmp	.+96     	; 0xd6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	2e c0       	rjmp	.+92     	; 0xd6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	2c c0       	rjmp	.+88     	; 0xd6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	2a c0       	rjmp	.+84     	; 0xd6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	28 c0       	rjmp	.+80     	; 0xd6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	26 c0       	rjmp	.+76     	; 0xd6 <__bad_interrupt>
+  8a:	00 00       	nop
+  8c:	0d 01       	movw	r0, r26
+  8e:	33 01       	movw	r6, r6
+  90:	6c 01       	movw	r12, r24
+  92:	8f 01       	movw	r16, r30
+  94:	c5 01       	movw	r24, r10
+  96:	ed 01       	movw	r28, r26
+  98:	26 02       	muls	r18, r22
+  9a:	43 02       	muls	r20, r19
+
+0000009c <__ctors_end>:
+  9c:	11 24       	eor	r1, r1
+  9e:	1f be       	out	0x3f, r1	; 63
+  a0:	cf ef       	ldi	r28, 0xFF	; 255
+  a2:	d0 e1       	ldi	r29, 0x10	; 16
+  a4:	de bf       	out	0x3e, r29	; 62
+  a6:	cd bf       	out	0x3d, r28	; 61
+
+000000a8 <__do_copy_data>:
+  a8:	11 e0       	ldi	r17, 0x01	; 1
+  aa:	a0 e0       	ldi	r26, 0x00	; 0
+  ac:	b1 e0       	ldi	r27, 0x01	; 1
+  ae:	e6 ea       	ldi	r30, 0xA6	; 166
+  b0:	fb e0       	ldi	r31, 0x0B	; 11
+  b2:	00 e0       	ldi	r16, 0x00	; 0
+  b4:	0b bf       	out	0x3b, r16	; 59
+  b6:	02 c0       	rjmp	.+4      	; 0xbc <__do_copy_data+0x14>
+  b8:	07 90       	elpm	r0, Z+
+  ba:	0d 92       	st	X+, r0
+  bc:	a8 31       	cpi	r26, 0x18	; 24
+  be:	b1 07       	cpc	r27, r17
+  c0:	d9 f7       	brne	.-10     	; 0xb8 <__do_copy_data+0x10>
+
+000000c2 <__do_clear_bss>:
+  c2:	21 e0       	ldi	r18, 0x01	; 1
+  c4:	a8 e1       	ldi	r26, 0x18	; 24
+  c6:	b1 e0       	ldi	r27, 0x01	; 1
+  c8:	01 c0       	rjmp	.+2      	; 0xcc <.do_clear_bss_start>
+
+000000ca <.do_clear_bss_loop>:
+  ca:	1d 92       	st	X+, r1
+
+000000cc <.do_clear_bss_start>:
+  cc:	a7 33       	cpi	r26, 0x37	; 55
+  ce:	b2 07       	cpc	r27, r18
+  d0:	e1 f7       	brne	.-8      	; 0xca <.do_clear_bss_loop>
+  d2:	02 d0       	rcall	.+4      	; 0xd8 <main>
+  d4:	66 c5       	rjmp	.+2764   	; 0xba2 <_exit>
+
+000000d6 <__bad_interrupt>:
+  d6:	94 cf       	rjmp	.-216    	; 0x0 <__vectors>
+
+000000d8 <main>:
+int main(void)
+{
+    /* Replace with your application code */
+	
+	//LED PORT 허용
+	DDRA |= 0x0f;
+  d8:	8a b3       	in	r24, 0x1a	; 26
+  da:	8f 60       	ori	r24, 0x0F	; 15
+  dc:	8a bb       	out	0x1a, r24	; 26
+	DDRD |= 0xff;
+  de:	81 b3       	in	r24, 0x11	; 17
+  e0:	8f ef       	ldi	r24, 0xFF	; 255
+  e2:	81 bb       	out	0x11, r24	; 17
+	DDRE |= 0x0f;
+  e4:	82 b1       	in	r24, 0x02	; 2
+  e6:	8f 60       	ori	r24, 0x0F	; 15
+  e8:	82 b9       	out	0x02, r24	; 2
+	
+	
+	//LED출력 포트 지정
+	SegPort(&PORTD, &PORTE);
+  ea:	63 e2       	ldi	r22, 0x23	; 35
+  ec:	70 e0       	ldi	r23, 0x00	; 0
+  ee:	82 e3       	ldi	r24, 0x32	; 50
+  f0:	90 e0       	ldi	r25, 0x00	; 0
+  f2:	1b d4       	rcall	.+2102   	; 0x92a <SegPort>
+	
+	//타이머 설정
+	TIMSK |= 0x04;
+  f4:	87 b7       	in	r24, 0x37	; 55
+  f6:	84 60       	ori	r24, 0x04	; 4
+  f8:	87 bf       	out	0x37, r24	; 55
+	TCCR1B |= 0x00;
+  fa:	8e b5       	in	r24, 0x2e	; 46
+  fc:	8e bd       	out	0x2e, r24	; 46
+	//TCCR1B |= 0x04;
+	
+	//외부 인터럽트 설정
+	EIMSK |= 0x70;// 0111 0000b
+  fe:	89 b7       	in	r24, 0x39	; 57
+ 100:	80 67       	ori	r24, 0x70	; 112
+ 102:	89 bf       	out	0x39, r24	; 57
+	EICRB |= 0b00101010;
+ 104:	8a b7       	in	r24, 0x3a	; 58
+ 106:	8a 62       	ori	r24, 0x2A	; 42
+ 108:	8a bf       	out	0x3a, r24	; 58
+	
+	
+	
+	SREG |= 0x80;
+ 10a:	8f b7       	in	r24, 0x3f	; 63
+ 10c:	80 68       	ori	r24, 0x80	; 128
+ 10e:	8f bf       	out	0x3f, r24	; 63
+	sei();
+ 110:	78 94       	sei
+	//cli();
+    while (1) 
+    {
+		//기본 초 표현
+		if(cnt>= 6000)cnt = 0;
+ 112:	80 91 26 01 	lds	r24, 0x0126	; 0x800126 <cnt>
+ 116:	90 91 27 01 	lds	r25, 0x0127	; 0x800127 <cnt+0x1>
+ 11a:	a0 91 28 01 	lds	r26, 0x0128	; 0x800128 <cnt+0x2>
+ 11e:	b0 91 29 01 	lds	r27, 0x0129	; 0x800129 <cnt+0x3>
+ 122:	80 37       	cpi	r24, 0x70	; 112
+ 124:	97 41       	sbci	r25, 0x17	; 23
+ 126:	a1 05       	cpc	r26, r1
+ 128:	b1 05       	cpc	r27, r1
+ 12a:	40 f0       	brcs	.+16     	; 0x13c <main+0x64>
+ 12c:	10 92 26 01 	sts	0x0126, r1	; 0x800126 <cnt>
+ 130:	10 92 27 01 	sts	0x0127, r1	; 0x800127 <cnt+0x1>
+ 134:	10 92 28 01 	sts	0x0128, r1	; 0x800128 <cnt+0x2>
+ 138:	10 92 29 01 	sts	0x0129, r1	; 0x800129 <cnt+0x3>
+		//SegDisp(cnt);
+		
+		switch(opmode)
+ 13c:	80 91 24 01 	lds	r24, 0x0124	; 0x800124 <opmode>
+ 140:	90 91 25 01 	lds	r25, 0x0125	; 0x800125 <opmode+0x1>
+ 144:	82 30       	cpi	r24, 0x02	; 2
+ 146:	91 05       	cpc	r25, r1
+ 148:	71 f1       	breq	.+92     	; 0x1a6 <main+0xce>
+ 14a:	2c f4       	brge	.+10     	; 0x156 <main+0x7e>
+ 14c:	00 97       	sbiw	r24, 0x00	; 0
+ 14e:	59 f0       	breq	.+22     	; 0x166 <main+0x8e>
+ 150:	01 97       	sbiw	r24, 0x01	; 1
+ 152:	c1 f0       	breq	.+48     	; 0x184 <main+0xac>
+ 154:	1b c2       	rjmp	.+1078   	; 0x58c <__LOCK_REGION_LENGTH__+0x18c>
+ 156:	83 30       	cpi	r24, 0x03	; 3
+ 158:	91 05       	cpc	r25, r1
+ 15a:	09 f4       	brne	.+2      	; 0x15e <main+0x86>
+ 15c:	cd c1       	rjmp	.+922    	; 0x4f8 <__LOCK_REGION_LENGTH__+0xf8>
+ 15e:	04 97       	sbiw	r24, 0x04	; 4
+ 160:	09 f4       	brne	.+2      	; 0x164 <main+0x8c>
+ 162:	f1 c1       	rjmp	.+994    	; 0x546 <__LOCK_REGION_LENGTH__+0x146>
+ 164:	13 c2       	rjmp	.+1062   	; 0x58c <__LOCK_REGION_LENGTH__+0x18c>
+		{
+			case 0:
+				cnt=0;
+ 166:	10 92 26 01 	sts	0x0126, r1	; 0x800126 <cnt>
+ 16a:	10 92 27 01 	sts	0x0127, r1	; 0x800127 <cnt+0x1>
+ 16e:	10 92 28 01 	sts	0x0128, r1	; 0x800128 <cnt+0x2>
+ 172:	10 92 29 01 	sts	0x0129, r1	; 0x800129 <cnt+0x3>
+				DDRD |= 0xff;
+ 176:	81 b3       	in	r24, 0x11	; 17
+ 178:	8f ef       	ldi	r24, 0xFF	; 255
+ 17a:	81 bb       	out	0x11, r24	; 17
+				DDRE |= 0x0f;
+ 17c:	82 b1       	in	r24, 0x02	; 2
+ 17e:	8f 60       	ori	r24, 0x0F	; 15
+ 180:	82 b9       	out	0x02, r24	; 2
+				
+				break;
+ 182:	04 c2       	rjmp	.+1032   	; 0x58c <__LOCK_REGION_LENGTH__+0x18c>
+			case 1:// 스톱워치
+				time_see = cnt;
+ 184:	80 91 26 01 	lds	r24, 0x0126	; 0x800126 <cnt>
+ 188:	90 91 27 01 	lds	r25, 0x0127	; 0x800127 <cnt+0x1>
+ 18c:	a0 91 28 01 	lds	r26, 0x0128	; 0x800128 <cnt+0x2>
+ 190:	b0 91 29 01 	lds	r27, 0x0129	; 0x800129 <cnt+0x3>
+ 194:	80 93 18 01 	sts	0x0118, r24	; 0x800118 <__data_end>
+ 198:	90 93 19 01 	sts	0x0119, r25	; 0x800119 <__data_end+0x1>
+ 19c:	a0 93 1a 01 	sts	0x011A, r26	; 0x80011a <__data_end+0x2>
+ 1a0:	b0 93 1b 01 	sts	0x011B, r27	; 0x80011b <__data_end+0x3>
+				//time = time_see;
+				break;
+ 1a4:	f3 c1       	rjmp	.+998    	; 0x58c <__LOCK_REGION_LENGTH__+0x18c>
+			case 2: //시간 설정 모드
+				
+				switch(state)
+ 1a6:	80 91 22 01 	lds	r24, 0x0122	; 0x800122 <state>
+ 1aa:	90 91 23 01 	lds	r25, 0x0123	; 0x800123 <state+0x1>
+ 1ae:	04 97       	sbiw	r24, 0x04	; 4
+ 1b0:	02 97       	sbiw	r24, 0x02	; 2
+ 1b2:	a8 f4       	brcc	.+42     	; 0x1de <main+0x106>
+				{
+					case 4://십의 자리 초 입력 대기
+					
+					case 5://십의자리 초 입력 모드
+						if(time_var>5)time_var=0;
+ 1b4:	80 91 1c 01 	lds	r24, 0x011C	; 0x80011c <time_var>
+ 1b8:	90 91 1d 01 	lds	r25, 0x011D	; 0x80011d <time_var+0x1>
+ 1bc:	86 30       	cpi	r24, 0x06	; 6
+ 1be:	91 05       	cpc	r25, r1
+ 1c0:	2c f0       	brlt	.+10     	; 0x1cc <main+0xf4>
+ 1c2:	10 92 1d 01 	sts	0x011D, r1	; 0x80011d <time_var+0x1>
+ 1c6:	10 92 1c 01 	sts	0x011C, r1	; 0x80011c <time_var>
+ 1ca:	1c c0       	rjmp	.+56     	; 0x204 <main+0x12c>
+						else if(time_var<0)time_var=5;
+ 1cc:	99 23       	and	r25, r25
+ 1ce:	d4 f4       	brge	.+52     	; 0x204 <main+0x12c>
+ 1d0:	85 e0       	ldi	r24, 0x05	; 5
+ 1d2:	90 e0       	ldi	r25, 0x00	; 0
+ 1d4:	90 93 1d 01 	sts	0x011D, r25	; 0x80011d <time_var+0x1>
+ 1d8:	80 93 1c 01 	sts	0x011C, r24	; 0x80011c <time_var>
+ 1dc:	13 c0       	rjmp	.+38     	; 0x204 <main+0x12c>
+						break;
+					default://나머지 모드 
+						if(time_var<0)
+ 1de:	80 91 1c 01 	lds	r24, 0x011C	; 0x80011c <time_var>
+ 1e2:	90 91 1d 01 	lds	r25, 0x011D	; 0x80011d <time_var+0x1>
+ 1e6:	99 23       	and	r25, r25
+ 1e8:	3c f4       	brge	.+14     	; 0x1f8 <main+0x120>
+						{
+							time_var =9;
+ 1ea:	89 e0       	ldi	r24, 0x09	; 9
+ 1ec:	90 e0       	ldi	r25, 0x00	; 0
+ 1ee:	90 93 1d 01 	sts	0x011D, r25	; 0x80011d <time_var+0x1>
+ 1f2:	80 93 1c 01 	sts	0x011C, r24	; 0x80011c <time_var>
+ 1f6:	06 c0       	rjmp	.+12     	; 0x204 <main+0x12c>
+						}else if(time_var>9)
+ 1f8:	0a 97       	sbiw	r24, 0x0a	; 10
+ 1fa:	24 f0       	brlt	.+8      	; 0x204 <main+0x12c>
+						{
+							time_var = 0;
+ 1fc:	10 92 1d 01 	sts	0x011D, r1	; 0x80011d <time_var+0x1>
+ 200:	10 92 1c 01 	sts	0x011C, r1	; 0x80011c <time_var>
+						}
+						break;
+				}
+				
+				
+				switch(state)
+ 204:	e0 91 22 01 	lds	r30, 0x0122	; 0x800122 <state>
+ 208:	f0 91 23 01 	lds	r31, 0x0123	; 0x800123 <state+0x1>
+ 20c:	e8 30       	cpi	r30, 0x08	; 8
+ 20e:	f1 05       	cpc	r31, r1
+ 210:	08 f0       	brcs	.+2      	; 0x214 <main+0x13c>
+ 212:	bc c1       	rjmp	.+888    	; 0x58c <__LOCK_REGION_LENGTH__+0x18c>
+ 214:	ea 5b       	subi	r30, 0xBA	; 186
+ 216:	ff 4f       	sbci	r31, 0xFF	; 255
+ 218:	a7 c4       	rjmp	.+2382   	; 0xb68 <__tablejump2__>
+				{
+					case 0:
+						//ISR5누를시 설정후 다음으로 넘어감
+						time_see = time + time_var*600;
+ 21a:	40 91 1c 01 	lds	r20, 0x011C	; 0x80011c <time_var>
+ 21e:	50 91 1d 01 	lds	r21, 0x011D	; 0x80011d <time_var+0x1>
+ 222:	28 e5       	ldi	r18, 0x58	; 88
+ 224:	32 e0       	ldi	r19, 0x02	; 2
+ 226:	42 9f       	mul	r20, r18
+ 228:	c0 01       	movw	r24, r0
+ 22a:	43 9f       	mul	r20, r19
+ 22c:	90 0d       	add	r25, r0
+ 22e:	52 9f       	mul	r21, r18
+ 230:	90 0d       	add	r25, r0
+ 232:	11 24       	eor	r1, r1
+ 234:	09 2e       	mov	r0, r25
+ 236:	00 0c       	add	r0, r0
+ 238:	aa 0b       	sbc	r26, r26
+ 23a:	bb 0b       	sbc	r27, r27
+ 23c:	40 91 1e 01 	lds	r20, 0x011E	; 0x80011e <time>
+ 240:	50 91 1f 01 	lds	r21, 0x011F	; 0x80011f <time+0x1>
+ 244:	60 91 20 01 	lds	r22, 0x0120	; 0x800120 <time+0x2>
+ 248:	70 91 21 01 	lds	r23, 0x0121	; 0x800121 <time+0x3>
+ 24c:	84 0f       	add	r24, r20
+ 24e:	95 1f       	adc	r25, r21
+ 250:	a6 1f       	adc	r26, r22
+ 252:	b7 1f       	adc	r27, r23
+ 254:	80 93 18 01 	sts	0x0118, r24	; 0x800118 <__data_end>
+ 258:	90 93 19 01 	sts	0x0119, r25	; 0x800119 <__data_end+0x1>
+ 25c:	a0 93 1a 01 	sts	0x011A, r26	; 0x80011a <__data_end+0x2>
+ 260:	b0 93 1b 01 	sts	0x011B, r27	; 0x80011b <__data_end+0x3>
+						break;
+ 264:	93 c1       	rjmp	.+806    	; 0x58c <__LOCK_REGION_LENGTH__+0x18c>
+					case 1://input 3번째
+						time += time_var*600;// 시간 입력
+ 266:	40 91 1c 01 	lds	r20, 0x011C	; 0x80011c <time_var>
+ 26a:	50 91 1d 01 	lds	r21, 0x011D	; 0x80011d <time_var+0x1>
+ 26e:	28 e5       	ldi	r18, 0x58	; 88
+ 270:	32 e0       	ldi	r19, 0x02	; 2
+ 272:	42 9f       	mul	r20, r18
+ 274:	c0 01       	movw	r24, r0
+ 276:	43 9f       	mul	r20, r19
+ 278:	90 0d       	add	r25, r0
+ 27a:	52 9f       	mul	r21, r18
+ 27c:	90 0d       	add	r25, r0
+ 27e:	11 24       	eor	r1, r1
+ 280:	09 2e       	mov	r0, r25
+ 282:	00 0c       	add	r0, r0
+ 284:	aa 0b       	sbc	r26, r26
+ 286:	bb 0b       	sbc	r27, r27
+ 288:	40 91 1e 01 	lds	r20, 0x011E	; 0x80011e <time>
+ 28c:	50 91 1f 01 	lds	r21, 0x011F	; 0x80011f <time+0x1>
+ 290:	60 91 20 01 	lds	r22, 0x0120	; 0x800120 <time+0x2>
+ 294:	70 91 21 01 	lds	r23, 0x0121	; 0x800121 <time+0x3>
+ 298:	84 0f       	add	r24, r20
+ 29a:	95 1f       	adc	r25, r21
+ 29c:	a6 1f       	adc	r26, r22
+ 29e:	b7 1f       	adc	r27, r23
+ 2a0:	80 93 1e 01 	sts	0x011E, r24	; 0x80011e <time>
+ 2a4:	90 93 1f 01 	sts	0x011F, r25	; 0x80011f <time+0x1>
+ 2a8:	a0 93 20 01 	sts	0x0120, r26	; 0x800120 <time+0x2>
+ 2ac:	b0 93 21 01 	sts	0x0121, r27	; 0x800121 <time+0x3>
+						select =2;//자릿수 변경
+ 2b0:	82 e0       	ldi	r24, 0x02	; 2
+ 2b2:	90 e0       	ldi	r25, 0x00	; 0
+ 2b4:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 2b8:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+						time_var = 0;//시간 변경값 초기화
+ 2bc:	10 92 1d 01 	sts	0x011D, r1	; 0x80011d <time_var+0x1>
+ 2c0:	10 92 1c 01 	sts	0x011C, r1	; 0x80011c <time_var>
+						state++;//다음 상태로 
+ 2c4:	80 91 22 01 	lds	r24, 0x0122	; 0x800122 <state>
+ 2c8:	90 91 23 01 	lds	r25, 0x0123	; 0x800123 <state+0x1>
+ 2cc:	01 96       	adiw	r24, 0x01	; 1
+ 2ce:	90 93 23 01 	sts	0x0123, r25	; 0x800123 <state+0x1>
+ 2d2:	80 93 22 01 	sts	0x0122, r24	; 0x800122 <state>
+						break;
+ 2d6:	5a c1       	rjmp	.+692    	; 0x58c <__LOCK_REGION_LENGTH__+0x18c>
+					case 2:
+						//ISR5누를시 설정후 다음으로 넘어감
+						time_see = time + time_var*60;
+ 2d8:	20 91 1c 01 	lds	r18, 0x011C	; 0x80011c <time_var>
+ 2dc:	30 91 1d 01 	lds	r19, 0x011D	; 0x80011d <time_var+0x1>
+ 2e0:	4c e3       	ldi	r20, 0x3C	; 60
+ 2e2:	42 9f       	mul	r20, r18
+ 2e4:	c0 01       	movw	r24, r0
+ 2e6:	43 9f       	mul	r20, r19
+ 2e8:	90 0d       	add	r25, r0
+ 2ea:	11 24       	eor	r1, r1
+ 2ec:	09 2e       	mov	r0, r25
+ 2ee:	00 0c       	add	r0, r0
+ 2f0:	aa 0b       	sbc	r26, r26
+ 2f2:	bb 0b       	sbc	r27, r27
+ 2f4:	40 91 1e 01 	lds	r20, 0x011E	; 0x80011e <time>
+ 2f8:	50 91 1f 01 	lds	r21, 0x011F	; 0x80011f <time+0x1>
+ 2fc:	60 91 20 01 	lds	r22, 0x0120	; 0x800120 <time+0x2>
+ 300:	70 91 21 01 	lds	r23, 0x0121	; 0x800121 <time+0x3>
+ 304:	84 0f       	add	r24, r20
+ 306:	95 1f       	adc	r25, r21
+ 308:	a6 1f       	adc	r26, r22
+ 30a:	b7 1f       	adc	r27, r23
+ 30c:	80 93 18 01 	sts	0x0118, r24	; 0x800118 <__data_end>
+ 310:	90 93 19 01 	sts	0x0119, r25	; 0x800119 <__data_end+0x1>
+ 314:	a0 93 1a 01 	sts	0x011A, r26	; 0x80011a <__data_end+0x2>
+ 318:	b0 93 1b 01 	sts	0x011B, r27	; 0x80011b <__data_end+0x3>
+						break;
+ 31c:	37 c1       	rjmp	.+622    	; 0x58c <__LOCK_REGION_LENGTH__+0x18c>
+					case 3://input 2번째
+						time += time_var*60;//시간 입력
+ 31e:	20 91 1c 01 	lds	r18, 0x011C	; 0x80011c <time_var>
+ 322:	30 91 1d 01 	lds	r19, 0x011D	; 0x80011d <time_var+0x1>
+ 326:	4c e3       	ldi	r20, 0x3C	; 60
+ 328:	42 9f       	mul	r20, r18
+ 32a:	c0 01       	movw	r24, r0
+ 32c:	43 9f       	mul	r20, r19
+ 32e:	90 0d       	add	r25, r0
+ 330:	11 24       	eor	r1, r1
+ 332:	09 2e       	mov	r0, r25
+ 334:	00 0c       	add	r0, r0
+ 336:	aa 0b       	sbc	r26, r26
+ 338:	bb 0b       	sbc	r27, r27
+ 33a:	40 91 1e 01 	lds	r20, 0x011E	; 0x80011e <time>
+ 33e:	50 91 1f 01 	lds	r21, 0x011F	; 0x80011f <time+0x1>
+ 342:	60 91 20 01 	lds	r22, 0x0120	; 0x800120 <time+0x2>
+ 346:	70 91 21 01 	lds	r23, 0x0121	; 0x800121 <time+0x3>
+ 34a:	84 0f       	add	r24, r20
+ 34c:	95 1f       	adc	r25, r21
+ 34e:	a6 1f       	adc	r26, r22
+ 350:	b7 1f       	adc	r27, r23
+ 352:	80 93 1e 01 	sts	0x011E, r24	; 0x80011e <time>
+ 356:	90 93 1f 01 	sts	0x011F, r25	; 0x80011f <time+0x1>
+ 35a:	a0 93 20 01 	sts	0x0120, r26	; 0x800120 <time+0x2>
+ 35e:	b0 93 21 01 	sts	0x0121, r27	; 0x800121 <time+0x3>
+						select =1;//자릿수 변경
+ 362:	81 e0       	ldi	r24, 0x01	; 1
+ 364:	90 e0       	ldi	r25, 0x00	; 0
+ 366:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 36a:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+						time_var = 0;//시간 변경값 초기화
+ 36e:	10 92 1d 01 	sts	0x011D, r1	; 0x80011d <time_var+0x1>
+ 372:	10 92 1c 01 	sts	0x011C, r1	; 0x80011c <time_var>
+						state++;
+ 376:	80 91 22 01 	lds	r24, 0x0122	; 0x800122 <state>
+ 37a:	90 91 23 01 	lds	r25, 0x0123	; 0x800123 <state+0x1>
+ 37e:	01 96       	adiw	r24, 0x01	; 1
+ 380:	90 93 23 01 	sts	0x0123, r25	; 0x800123 <state+0x1>
+ 384:	80 93 22 01 	sts	0x0122, r24	; 0x800122 <state>
+						break;
+ 388:	01 c1       	rjmp	.+514    	; 0x58c <__LOCK_REGION_LENGTH__+0x18c>
+					case 4:
+						//ISR5누를시 설정후 다음으로 넘어감
+						time_see = time + time_var*10;
+ 38a:	20 91 1c 01 	lds	r18, 0x011C	; 0x80011c <time_var>
+ 38e:	30 91 1d 01 	lds	r19, 0x011D	; 0x80011d <time_var+0x1>
+ 392:	c9 01       	movw	r24, r18
+ 394:	88 0f       	add	r24, r24
+ 396:	99 1f       	adc	r25, r25
+ 398:	22 0f       	add	r18, r18
+ 39a:	33 1f       	adc	r19, r19
+ 39c:	22 0f       	add	r18, r18
+ 39e:	33 1f       	adc	r19, r19
+ 3a0:	22 0f       	add	r18, r18
+ 3a2:	33 1f       	adc	r19, r19
+ 3a4:	82 0f       	add	r24, r18
+ 3a6:	93 1f       	adc	r25, r19
+ 3a8:	09 2e       	mov	r0, r25
+ 3aa:	00 0c       	add	r0, r0
+ 3ac:	aa 0b       	sbc	r26, r26
+ 3ae:	bb 0b       	sbc	r27, r27
+ 3b0:	40 91 1e 01 	lds	r20, 0x011E	; 0x80011e <time>
+ 3b4:	50 91 1f 01 	lds	r21, 0x011F	; 0x80011f <time+0x1>
+ 3b8:	60 91 20 01 	lds	r22, 0x0120	; 0x800120 <time+0x2>
+ 3bc:	70 91 21 01 	lds	r23, 0x0121	; 0x800121 <time+0x3>
+ 3c0:	84 0f       	add	r24, r20
+ 3c2:	95 1f       	adc	r25, r21
+ 3c4:	a6 1f       	adc	r26, r22
+ 3c6:	b7 1f       	adc	r27, r23
+ 3c8:	80 93 18 01 	sts	0x0118, r24	; 0x800118 <__data_end>
+ 3cc:	90 93 19 01 	sts	0x0119, r25	; 0x800119 <__data_end+0x1>
+ 3d0:	a0 93 1a 01 	sts	0x011A, r26	; 0x80011a <__data_end+0x2>
+ 3d4:	b0 93 1b 01 	sts	0x011B, r27	; 0x80011b <__data_end+0x3>
+						break;
+ 3d8:	d9 c0       	rjmp	.+434    	; 0x58c <__LOCK_REGION_LENGTH__+0x18c>
+					case 5://input 1번째
+						time += time_var*10;
+ 3da:	20 91 1c 01 	lds	r18, 0x011C	; 0x80011c <time_var>
+ 3de:	30 91 1d 01 	lds	r19, 0x011D	; 0x80011d <time_var+0x1>
+ 3e2:	c9 01       	movw	r24, r18
+ 3e4:	88 0f       	add	r24, r24
+ 3e6:	99 1f       	adc	r25, r25
+ 3e8:	22 0f       	add	r18, r18
+ 3ea:	33 1f       	adc	r19, r19
+ 3ec:	22 0f       	add	r18, r18
+ 3ee:	33 1f       	adc	r19, r19
+ 3f0:	22 0f       	add	r18, r18
+ 3f2:	33 1f       	adc	r19, r19
+ 3f4:	82 0f       	add	r24, r18
+ 3f6:	93 1f       	adc	r25, r19
+ 3f8:	09 2e       	mov	r0, r25
+ 3fa:	00 0c       	add	r0, r0
+ 3fc:	aa 0b       	sbc	r26, r26
+ 3fe:	bb 0b       	sbc	r27, r27
+ 400:	40 91 1e 01 	lds	r20, 0x011E	; 0x80011e <time>
+ 404:	50 91 1f 01 	lds	r21, 0x011F	; 0x80011f <time+0x1>
+ 408:	60 91 20 01 	lds	r22, 0x0120	; 0x800120 <time+0x2>
+ 40c:	70 91 21 01 	lds	r23, 0x0121	; 0x800121 <time+0x3>
+ 410:	84 0f       	add	r24, r20
+ 412:	95 1f       	adc	r25, r21
+ 414:	a6 1f       	adc	r26, r22
+ 416:	b7 1f       	adc	r27, r23
+ 418:	80 93 1e 01 	sts	0x011E, r24	; 0x80011e <time>
+ 41c:	90 93 1f 01 	sts	0x011F, r25	; 0x80011f <time+0x1>
+ 420:	a0 93 20 01 	sts	0x0120, r26	; 0x800120 <time+0x2>
+ 424:	b0 93 21 01 	sts	0x0121, r27	; 0x800121 <time+0x3>
+						select =0;
+ 428:	10 92 01 01 	sts	0x0101, r1	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 42c:	10 92 00 01 	sts	0x0100, r1	; 0x800100 <__DATA_REGION_ORIGIN__>
+						time_var = 0;//시간 변경값 초기화
+ 430:	10 92 1d 01 	sts	0x011D, r1	; 0x80011d <time_var+0x1>
+ 434:	10 92 1c 01 	sts	0x011C, r1	; 0x80011c <time_var>
+						state++;
+ 438:	80 91 22 01 	lds	r24, 0x0122	; 0x800122 <state>
+ 43c:	90 91 23 01 	lds	r25, 0x0123	; 0x800123 <state+0x1>
+ 440:	01 96       	adiw	r24, 0x01	; 1
+ 442:	90 93 23 01 	sts	0x0123, r25	; 0x800123 <state+0x1>
+ 446:	80 93 22 01 	sts	0x0122, r24	; 0x800122 <state>
+						break;
+ 44a:	a0 c0       	rjmp	.+320    	; 0x58c <__LOCK_REGION_LENGTH__+0x18c>
+					case 6:
+						//ISR5누를시 설정후 다음으로 넘어감
+						time_see = time + time_var;
+ 44c:	80 91 1c 01 	lds	r24, 0x011C	; 0x80011c <time_var>
+ 450:	90 91 1d 01 	lds	r25, 0x011D	; 0x80011d <time_var+0x1>
+ 454:	09 2e       	mov	r0, r25
+ 456:	00 0c       	add	r0, r0
+ 458:	aa 0b       	sbc	r26, r26
+ 45a:	bb 0b       	sbc	r27, r27
+ 45c:	40 91 1e 01 	lds	r20, 0x011E	; 0x80011e <time>
+ 460:	50 91 1f 01 	lds	r21, 0x011F	; 0x80011f <time+0x1>
+ 464:	60 91 20 01 	lds	r22, 0x0120	; 0x800120 <time+0x2>
+ 468:	70 91 21 01 	lds	r23, 0x0121	; 0x800121 <time+0x3>
+ 46c:	84 0f       	add	r24, r20
+ 46e:	95 1f       	adc	r25, r21
+ 470:	a6 1f       	adc	r26, r22
+ 472:	b7 1f       	adc	r27, r23
+ 474:	80 93 18 01 	sts	0x0118, r24	; 0x800118 <__data_end>
+ 478:	90 93 19 01 	sts	0x0119, r25	; 0x800119 <__data_end+0x1>
+ 47c:	a0 93 1a 01 	sts	0x011A, r26	; 0x80011a <__data_end+0x2>
+ 480:	b0 93 1b 01 	sts	0x011B, r27	; 0x80011b <__data_end+0x3>
+						break;
+ 484:	83 c0       	rjmp	.+262    	; 0x58c <__LOCK_REGION_LENGTH__+0x18c>
+					case 7://input 0번째
+						time += time_var;
+ 486:	80 91 1c 01 	lds	r24, 0x011C	; 0x80011c <time_var>
+ 48a:	90 91 1d 01 	lds	r25, 0x011D	; 0x80011d <time_var+0x1>
+ 48e:	09 2e       	mov	r0, r25
+ 490:	00 0c       	add	r0, r0
+ 492:	aa 0b       	sbc	r26, r26
+ 494:	bb 0b       	sbc	r27, r27
+ 496:	40 91 1e 01 	lds	r20, 0x011E	; 0x80011e <time>
+ 49a:	50 91 1f 01 	lds	r21, 0x011F	; 0x80011f <time+0x1>
+ 49e:	60 91 20 01 	lds	r22, 0x0120	; 0x800120 <time+0x2>
+ 4a2:	70 91 21 01 	lds	r23, 0x0121	; 0x800121 <time+0x3>
+ 4a6:	84 0f       	add	r24, r20
+ 4a8:	95 1f       	adc	r25, r21
+ 4aa:	a6 1f       	adc	r26, r22
+ 4ac:	b7 1f       	adc	r27, r23
+ 4ae:	80 93 1e 01 	sts	0x011E, r24	; 0x80011e <time>
+ 4b2:	90 93 1f 01 	sts	0x011F, r25	; 0x80011f <time+0x1>
+ 4b6:	a0 93 20 01 	sts	0x0120, r26	; 0x800120 <time+0x2>
+ 4ba:	b0 93 21 01 	sts	0x0121, r27	; 0x800121 <time+0x3>
+						state = 0; //초기 상태로 복귀
+ 4be:	10 92 23 01 	sts	0x0123, r1	; 0x800123 <state+0x1>
+ 4c2:	10 92 22 01 	sts	0x0122, r1	; 0x800122 <state>
+						select =4; //깜빡임 없엠
+ 4c6:	24 e0       	ldi	r18, 0x04	; 4
+ 4c8:	30 e0       	ldi	r19, 0x00	; 0
+ 4ca:	30 93 01 01 	sts	0x0101, r19	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 4ce:	20 93 00 01 	sts	0x0100, r18	; 0x800100 <__DATA_REGION_ORIGIN__>
+						time_var = 0;//시간 변경값 초기화
+ 4d2:	10 92 1d 01 	sts	0x011D, r1	; 0x80011d <time_var+0x1>
+ 4d6:	10 92 1c 01 	sts	0x011C, r1	; 0x80011c <time_var>
+						time_see = time;
+ 4da:	80 93 18 01 	sts	0x0118, r24	; 0x800118 <__data_end>
+ 4de:	90 93 19 01 	sts	0x0119, r25	; 0x800119 <__data_end+0x1>
+ 4e2:	a0 93 1a 01 	sts	0x011A, r26	; 0x80011a <__data_end+0x2>
+ 4e6:	b0 93 1b 01 	sts	0x011B, r27	; 0x80011b <__data_end+0x3>
+						opmode = 3; //타이머 시작 정지 모드로 변경
+ 4ea:	83 e0       	ldi	r24, 0x03	; 3
+ 4ec:	90 e0       	ldi	r25, 0x00	; 0
+ 4ee:	90 93 25 01 	sts	0x0125, r25	; 0x800125 <opmode+0x1>
+ 4f2:	80 93 24 01 	sts	0x0124, r24	; 0x800124 <opmode>
+						break;
+ 4f6:	4a c0       	rjmp	.+148    	; 0x58c <__LOCK_REGION_LENGTH__+0x18c>
+					default:
+					break;
+				}
+				break;
+			case 3://타이머 시간 감소 모드
+				time_see = time-cnt;//반복문이라 time을 바로 빼면 반복되서 금방 0이 된다.
+ 4f8:	80 91 1e 01 	lds	r24, 0x011E	; 0x80011e <time>
+ 4fc:	90 91 1f 01 	lds	r25, 0x011F	; 0x80011f <time+0x1>
+ 500:	a0 91 20 01 	lds	r26, 0x0120	; 0x800120 <time+0x2>
+ 504:	b0 91 21 01 	lds	r27, 0x0121	; 0x800121 <time+0x3>
+ 508:	40 91 26 01 	lds	r20, 0x0126	; 0x800126 <cnt>
+ 50c:	50 91 27 01 	lds	r21, 0x0127	; 0x800127 <cnt+0x1>
+ 510:	60 91 28 01 	lds	r22, 0x0128	; 0x800128 <cnt+0x2>
+ 514:	70 91 29 01 	lds	r23, 0x0129	; 0x800129 <cnt+0x3>
+ 518:	84 1b       	sub	r24, r20
+ 51a:	95 0b       	sbc	r25, r21
+ 51c:	a6 0b       	sbc	r26, r22
+ 51e:	b7 0b       	sbc	r27, r23
+ 520:	80 93 18 01 	sts	0x0118, r24	; 0x800118 <__data_end>
+ 524:	90 93 19 01 	sts	0x0119, r25	; 0x800119 <__data_end+0x1>
+ 528:	a0 93 1a 01 	sts	0x011A, r26	; 0x80011a <__data_end+0x2>
+ 52c:	b0 93 1b 01 	sts	0x011B, r27	; 0x80011b <__data_end+0x3>
+				
+				if(!(time_see))
+ 530:	89 2b       	or	r24, r25
+ 532:	8a 2b       	or	r24, r26
+ 534:	8b 2b       	or	r24, r27
+ 536:	51 f5       	brne	.+84     	; 0x58c <__LOCK_REGION_LENGTH__+0x18c>
+				{
+					opmode=4;
+ 538:	84 e0       	ldi	r24, 0x04	; 4
+ 53a:	90 e0       	ldi	r25, 0x00	; 0
+ 53c:	90 93 25 01 	sts	0x0125, r25	; 0x800125 <opmode+0x1>
+ 540:	80 93 24 01 	sts	0x0124, r24	; 0x800124 <opmode>
+ 544:	23 c0       	rjmp	.+70     	; 0x58c <__LOCK_REGION_LENGTH__+0x18c>
+				}
+				break;
+			case 4://타이머 종료
+				TCCR1B = 0x00;
+ 546:	1e bc       	out	0x2e, r1	; 46
+				cnt=0;
+ 548:	10 92 26 01 	sts	0x0126, r1	; 0x800126 <cnt>
+ 54c:	10 92 27 01 	sts	0x0127, r1	; 0x800127 <cnt+0x1>
+ 550:	10 92 28 01 	sts	0x0128, r1	; 0x800128 <cnt+0x2>
+ 554:	10 92 29 01 	sts	0x0129, r1	; 0x800129 <cnt+0x3>
+				PORTA=0x0f;
+ 558:	8f e0       	ldi	r24, 0x0F	; 15
+ 55a:	8b bb       	out	0x1b, r24	; 27
+				//SegDisp(time_see);
+				DDRD &=~(0xff);
+ 55c:	81 b3       	in	r24, 0x11	; 17
+ 55e:	11 ba       	out	0x11, r1	; 17
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 560:	8f ef       	ldi	r24, 0xFF	; 255
+ 562:	91 ee       	ldi	r25, 0xE1	; 225
+ 564:	24 e0       	ldi	r18, 0x04	; 4
+ 566:	81 50       	subi	r24, 0x01	; 1
+ 568:	90 40       	sbci	r25, 0x00	; 0
+ 56a:	20 40       	sbci	r18, 0x00	; 0
+ 56c:	e1 f7       	brne	.-8      	; 0x566 <__LOCK_REGION_LENGTH__+0x166>
+ 56e:	00 c0       	rjmp	.+0      	; 0x570 <__LOCK_REGION_LENGTH__+0x170>
+ 570:	00 00       	nop
+				_delay_ms(100);
+				PORTA=0x00;
+ 572:	1b ba       	out	0x1b, r1	; 27
+				//SegDisp(time_see);
+				DDRE &=~(0x0f);
+ 574:	82 b1       	in	r24, 0x02	; 2
+ 576:	80 7f       	andi	r24, 0xF0	; 240
+ 578:	82 b9       	out	0x02, r24	; 2
+ 57a:	8f ef       	ldi	r24, 0xFF	; 255
+ 57c:	91 ee       	ldi	r25, 0xE1	; 225
+ 57e:	24 e0       	ldi	r18, 0x04	; 4
+ 580:	81 50       	subi	r24, 0x01	; 1
+ 582:	90 40       	sbci	r25, 0x00	; 0
+ 584:	20 40       	sbci	r18, 0x00	; 0
+ 586:	e1 f7       	brne	.-8      	; 0x580 <__LOCK_REGION_LENGTH__+0x180>
+ 588:	00 c0       	rjmp	.+0      	; 0x58a <__LOCK_REGION_LENGTH__+0x18a>
+ 58a:	00 00       	nop
+				_delay_ms(100);
+				break;
+			default:
+				break;
+		}
+		SegDisp(time_see);
+ 58c:	60 91 18 01 	lds	r22, 0x0118	; 0x800118 <__data_end>
+ 590:	70 91 19 01 	lds	r23, 0x0119	; 0x800119 <__data_end+0x1>
+ 594:	80 91 1a 01 	lds	r24, 0x011A	; 0x80011a <__data_end+0x2>
+ 598:	90 91 1b 01 	lds	r25, 0x011B	; 0x80011b <__data_end+0x3>
+ 59c:	31 d2       	rcall	.+1122   	; 0xa00 <SegDisp>
+	}
+ 59e:	b9 cd       	rjmp	.-1166   	; 0x112 <main+0x3a>
+
+000005a0 <__vector_14>:
+		
+	
+}
+ISR(TIMER1_OVF_vect)
+{
+ 5a0:	1f 92       	push	r1
+ 5a2:	0f 92       	push	r0
+ 5a4:	0f b6       	in	r0, 0x3f	; 63
+ 5a6:	0f 92       	push	r0
+ 5a8:	11 24       	eor	r1, r1
+ 5aa:	8f 93       	push	r24
+ 5ac:	9f 93       	push	r25
+ 5ae:	af 93       	push	r26
+ 5b0:	bf 93       	push	r27
+	cnt++;
+ 5b2:	80 91 26 01 	lds	r24, 0x0126	; 0x800126 <cnt>
+ 5b6:	90 91 27 01 	lds	r25, 0x0127	; 0x800127 <cnt+0x1>
+ 5ba:	a0 91 28 01 	lds	r26, 0x0128	; 0x800128 <cnt+0x2>
+ 5be:	b0 91 29 01 	lds	r27, 0x0129	; 0x800129 <cnt+0x3>
+ 5c2:	01 96       	adiw	r24, 0x01	; 1
+ 5c4:	a1 1d       	adc	r26, r1
+ 5c6:	b1 1d       	adc	r27, r1
+ 5c8:	80 93 26 01 	sts	0x0126, r24	; 0x800126 <cnt>
+ 5cc:	90 93 27 01 	sts	0x0127, r25	; 0x800127 <cnt+0x1>
+ 5d0:	a0 93 28 01 	sts	0x0128, r26	; 0x800128 <cnt+0x2>
+ 5d4:	b0 93 29 01 	sts	0x0129, r27	; 0x800129 <cnt+0x3>
+}
+ 5d8:	bf 91       	pop	r27
+ 5da:	af 91       	pop	r26
+ 5dc:	9f 91       	pop	r25
+ 5de:	8f 91       	pop	r24
+ 5e0:	0f 90       	pop	r0
+ 5e2:	0f be       	out	0x3f, r0	; 63
+ 5e4:	0f 90       	pop	r0
+ 5e6:	1f 90       	pop	r1
+ 5e8:	18 95       	reti
+
+000005ea <__vector_5>:
+ISR(INT4_vect)// 시작 정지 리셋 / 시간 설정시 업
+{
+ 5ea:	1f 92       	push	r1
+ 5ec:	0f 92       	push	r0
+ 5ee:	0f b6       	in	r0, 0x3f	; 63
+ 5f0:	0f 92       	push	r0
+ 5f2:	11 24       	eor	r1, r1
+ 5f4:	8f 93       	push	r24
+ 5f6:	9f 93       	push	r25
+ 5f8:	af 93       	push	r26
+ 5fa:	bf 93       	push	r27
+	if(opmode == 0) //스탑워치로
+ 5fc:	80 91 24 01 	lds	r24, 0x0124	; 0x800124 <opmode>
+ 600:	90 91 25 01 	lds	r25, 0x0125	; 0x800125 <opmode+0x1>
+ 604:	89 2b       	or	r24, r25
+ 606:	c9 f4       	brne	.+50     	; 0x63a <__vector_5+0x50>
+	{
+		opmode=1;
+ 608:	81 e0       	ldi	r24, 0x01	; 1
+ 60a:	90 e0       	ldi	r25, 0x00	; 0
+ 60c:	90 93 25 01 	sts	0x0125, r25	; 0x800125 <opmode+0x1>
+ 610:	80 93 24 01 	sts	0x0124, r24	; 0x800124 <opmode>
+		cnt=time_see;//opmode 0일때 cnt초기화 이제 다시 시작하니까 값 입력하기
+ 614:	80 91 18 01 	lds	r24, 0x0118	; 0x800118 <__data_end>
+ 618:	90 91 19 01 	lds	r25, 0x0119	; 0x800119 <__data_end+0x1>
+ 61c:	a0 91 1a 01 	lds	r26, 0x011A	; 0x80011a <__data_end+0x2>
+ 620:	b0 91 1b 01 	lds	r27, 0x011B	; 0x80011b <__data_end+0x3>
+ 624:	80 93 26 01 	sts	0x0126, r24	; 0x800126 <cnt>
+ 628:	90 93 27 01 	sts	0x0127, r25	; 0x800127 <cnt+0x1>
+ 62c:	a0 93 28 01 	sts	0x0128, r26	; 0x800128 <cnt+0x2>
+ 630:	b0 93 29 01 	sts	0x0129, r27	; 0x800129 <cnt+0x3>
+		TCCR1B = 0x04;//카운터 시작
+ 634:	84 e0       	ldi	r24, 0x04	; 4
+ 636:	8e bd       	out	0x2e, r24	; 46
+ 638:	44 c0       	rjmp	.+136    	; 0x6c2 <__vector_5+0xd8>
+	}
+	else if(opmode == 1) //스탑워치 일시 정지 opmode=0이고 cnt초기화 되니까 cnt 값 저장
+ 63a:	80 91 24 01 	lds	r24, 0x0124	; 0x800124 <opmode>
+ 63e:	90 91 25 01 	lds	r25, 0x0125	; 0x800125 <opmode+0x1>
+ 642:	01 97       	sbiw	r24, 0x01	; 1
+ 644:	b1 f4       	brne	.+44     	; 0x672 <__vector_5+0x88>
+	{
+		//TCCR1B = (TCCR1B)? 0x00:0x04;//정지는 opmode =0로 이동 나중에 수정하기
+		TCCR1B = 0x00;
+ 646:	1e bc       	out	0x2e, r1	; 46
+		opmode=0;
+ 648:	10 92 25 01 	sts	0x0125, r1	; 0x800125 <opmode+0x1>
+ 64c:	10 92 24 01 	sts	0x0124, r1	; 0x800124 <opmode>
+		time = time_see;
+ 650:	80 91 18 01 	lds	r24, 0x0118	; 0x800118 <__data_end>
+ 654:	90 91 19 01 	lds	r25, 0x0119	; 0x800119 <__data_end+0x1>
+ 658:	a0 91 1a 01 	lds	r26, 0x011A	; 0x80011a <__data_end+0x2>
+ 65c:	b0 91 1b 01 	lds	r27, 0x011B	; 0x80011b <__data_end+0x3>
+ 660:	80 93 1e 01 	sts	0x011E, r24	; 0x80011e <time>
+ 664:	90 93 1f 01 	sts	0x011F, r25	; 0x80011f <time+0x1>
+ 668:	a0 93 20 01 	sts	0x0120, r26	; 0x800120 <time+0x2>
+ 66c:	b0 93 21 01 	sts	0x0121, r27	; 0x800121 <time+0x3>
+ 670:	28 c0       	rjmp	.+80     	; 0x6c2 <__vector_5+0xd8>
+	} //타이머 시작 정지
+	else if(opmode == 2) time_var++;//시간 설정
+ 672:	80 91 24 01 	lds	r24, 0x0124	; 0x800124 <opmode>
+ 676:	90 91 25 01 	lds	r25, 0x0125	; 0x800125 <opmode+0x1>
+ 67a:	02 97       	sbiw	r24, 0x02	; 2
+ 67c:	51 f4       	brne	.+20     	; 0x692 <__vector_5+0xa8>
+ 67e:	80 91 1c 01 	lds	r24, 0x011C	; 0x80011c <time_var>
+ 682:	90 91 1d 01 	lds	r25, 0x011D	; 0x80011d <time_var+0x1>
+ 686:	01 96       	adiw	r24, 0x01	; 1
+ 688:	90 93 1d 01 	sts	0x011D, r25	; 0x80011d <time_var+0x1>
+ 68c:	80 93 1c 01 	sts	0x011C, r24	; 0x80011c <time_var>
+ 690:	18 c0       	rjmp	.+48     	; 0x6c2 <__vector_5+0xd8>
+	else if(opmode == 3) //타이머 시간 감소시 타이머 켜고 끄기
+ 692:	80 91 24 01 	lds	r24, 0x0124	; 0x800124 <opmode>
+ 696:	90 91 25 01 	lds	r25, 0x0125	; 0x800125 <opmode+0x1>
+ 69a:	03 97       	sbiw	r24, 0x03	; 3
+ 69c:	41 f4       	brne	.+16     	; 0x6ae <__vector_5+0xc4>
+	{
+		TCCR1B = (TCCR1B)? 0x00:0x04;
+ 69e:	8e b5       	in	r24, 0x2e	; 46
+ 6a0:	88 23       	and	r24, r24
+ 6a2:	11 f0       	breq	.+4      	; 0x6a8 <__vector_5+0xbe>
+ 6a4:	80 e0       	ldi	r24, 0x00	; 0
+ 6a6:	01 c0       	rjmp	.+2      	; 0x6aa <__vector_5+0xc0>
+ 6a8:	84 e0       	ldi	r24, 0x04	; 4
+ 6aa:	8e bd       	out	0x2e, r24	; 46
+ 6ac:	0a c0       	rjmp	.+20     	; 0x6c2 <__vector_5+0xd8>
+		
+	}
+	else if(opmode ==4) opmode=0;//타이머 종료
+ 6ae:	80 91 24 01 	lds	r24, 0x0124	; 0x800124 <opmode>
+ 6b2:	90 91 25 01 	lds	r25, 0x0125	; 0x800125 <opmode+0x1>
+ 6b6:	04 97       	sbiw	r24, 0x04	; 4
+ 6b8:	21 f4       	brne	.+8      	; 0x6c2 <__vector_5+0xd8>
+ 6ba:	10 92 25 01 	sts	0x0125, r1	; 0x800125 <opmode+0x1>
+ 6be:	10 92 24 01 	sts	0x0124, r1	; 0x800124 <opmode>
+}
+ 6c2:	bf 91       	pop	r27
+ 6c4:	af 91       	pop	r26
+ 6c6:	9f 91       	pop	r25
+ 6c8:	8f 91       	pop	r24
+ 6ca:	0f 90       	pop	r0
+ 6cc:	0f be       	out	0x3f, r0	; 63
+ 6ce:	0f 90       	pop	r0
+ 6d0:	1f 90       	pop	r1
+ 6d2:	18 95       	reti
+
+000006d4 <__vector_6>:
+ISR(INT5_vect)// 시간설정 모드 / 이후 다운 
+{
+ 6d4:	1f 92       	push	r1
+ 6d6:	0f 92       	push	r0
+ 6d8:	0f b6       	in	r0, 0x3f	; 63
+ 6da:	0f 92       	push	r0
+ 6dc:	11 24       	eor	r1, r1
+ 6de:	8f 93       	push	r24
+ 6e0:	9f 93       	push	r25
+	if (opmode == 0)//스톱워치 리셋
+ 6e2:	80 91 24 01 	lds	r24, 0x0124	; 0x800124 <opmode>
+ 6e6:	90 91 25 01 	lds	r25, 0x0125	; 0x800125 <opmode+0x1>
+ 6ea:	89 2b       	or	r24, r25
+ 6ec:	f1 f4       	brne	.+60     	; 0x72a <__vector_6+0x56>
+	{
+		TCCR1B = 0x00;
+ 6ee:	1e bc       	out	0x2e, r1	; 46
+		cnt=0;
+ 6f0:	10 92 26 01 	sts	0x0126, r1	; 0x800126 <cnt>
+ 6f4:	10 92 27 01 	sts	0x0127, r1	; 0x800127 <cnt+0x1>
+ 6f8:	10 92 28 01 	sts	0x0128, r1	; 0x800128 <cnt+0x2>
+ 6fc:	10 92 29 01 	sts	0x0129, r1	; 0x800129 <cnt+0x3>
+		
+		opmode = 0;
+ 700:	10 92 25 01 	sts	0x0125, r1	; 0x800125 <opmode+0x1>
+ 704:	10 92 24 01 	sts	0x0124, r1	; 0x800124 <opmode>
+		time_see=0;
+ 708:	10 92 18 01 	sts	0x0118, r1	; 0x800118 <__data_end>
+ 70c:	10 92 19 01 	sts	0x0119, r1	; 0x800119 <__data_end+0x1>
+ 710:	10 92 1a 01 	sts	0x011A, r1	; 0x80011a <__data_end+0x2>
+ 714:	10 92 1b 01 	sts	0x011B, r1	; 0x80011b <__data_end+0x3>
+		time = time_see;
+ 718:	10 92 1e 01 	sts	0x011E, r1	; 0x80011e <time>
+ 71c:	10 92 1f 01 	sts	0x011F, r1	; 0x80011f <time+0x1>
+ 720:	10 92 20 01 	sts	0x0120, r1	; 0x800120 <time+0x2>
+ 724:	10 92 21 01 	sts	0x0121, r1	; 0x800121 <time+0x3>
+ 728:	62 c0       	rjmp	.+196    	; 0x7ee <__vector_6+0x11a>
+	}
+	else if (opmode == 1)//스톱워치 작동시 리셋
+ 72a:	80 91 24 01 	lds	r24, 0x0124	; 0x800124 <opmode>
+ 72e:	90 91 25 01 	lds	r25, 0x0125	; 0x800125 <opmode+0x1>
+ 732:	01 97       	sbiw	r24, 0x01	; 1
+ 734:	f1 f4       	brne	.+60     	; 0x772 <__vector_6+0x9e>
+	{
+		TCCR1B = 0x00;
+ 736:	1e bc       	out	0x2e, r1	; 46
+		cnt=0;
+ 738:	10 92 26 01 	sts	0x0126, r1	; 0x800126 <cnt>
+ 73c:	10 92 27 01 	sts	0x0127, r1	; 0x800127 <cnt+0x1>
+ 740:	10 92 28 01 	sts	0x0128, r1	; 0x800128 <cnt+0x2>
+ 744:	10 92 29 01 	sts	0x0129, r1	; 0x800129 <cnt+0x3>
+		
+		opmode = 0;
+ 748:	10 92 25 01 	sts	0x0125, r1	; 0x800125 <opmode+0x1>
+ 74c:	10 92 24 01 	sts	0x0124, r1	; 0x800124 <opmode>
+		time_see=0;
+ 750:	10 92 18 01 	sts	0x0118, r1	; 0x800118 <__data_end>
+ 754:	10 92 19 01 	sts	0x0119, r1	; 0x800119 <__data_end+0x1>
+ 758:	10 92 1a 01 	sts	0x011A, r1	; 0x80011a <__data_end+0x2>
+ 75c:	10 92 1b 01 	sts	0x011B, r1	; 0x80011b <__data_end+0x3>
+		time = time_see;
+ 760:	10 92 1e 01 	sts	0x011E, r1	; 0x80011e <time>
+ 764:	10 92 1f 01 	sts	0x011F, r1	; 0x80011f <time+0x1>
+ 768:	10 92 20 01 	sts	0x0120, r1	; 0x800120 <time+0x2>
+ 76c:	10 92 21 01 	sts	0x0121, r1	; 0x800121 <time+0x3>
+ 770:	3e c0       	rjmp	.+124    	; 0x7ee <__vector_6+0x11a>
+	}
+	else if(opmode == 2) time_var--;//시간 설정
+ 772:	80 91 24 01 	lds	r24, 0x0124	; 0x800124 <opmode>
+ 776:	90 91 25 01 	lds	r25, 0x0125	; 0x800125 <opmode+0x1>
+ 77a:	02 97       	sbiw	r24, 0x02	; 2
+ 77c:	51 f4       	brne	.+20     	; 0x792 <__vector_6+0xbe>
+ 77e:	80 91 1c 01 	lds	r24, 0x011C	; 0x80011c <time_var>
+ 782:	90 91 1d 01 	lds	r25, 0x011D	; 0x80011d <time_var+0x1>
+ 786:	01 97       	sbiw	r24, 0x01	; 1
+ 788:	90 93 1d 01 	sts	0x011D, r25	; 0x80011d <time_var+0x1>
+ 78c:	80 93 1c 01 	sts	0x011C, r24	; 0x80011c <time_var>
+ 790:	2e c0       	rjmp	.+92     	; 0x7ee <__vector_6+0x11a>
+	else if(opmode == 3)//타이머 카운트중 리셋
+ 792:	80 91 24 01 	lds	r24, 0x0124	; 0x800124 <opmode>
+ 796:	90 91 25 01 	lds	r25, 0x0125	; 0x800125 <opmode+0x1>
+ 79a:	03 97       	sbiw	r24, 0x03	; 3
+ 79c:	f1 f4       	brne	.+60     	; 0x7da <__vector_6+0x106>
+	{
+		TCCR1B = 0x00;
+ 79e:	1e bc       	out	0x2e, r1	; 46
+		cnt=0;
+ 7a0:	10 92 26 01 	sts	0x0126, r1	; 0x800126 <cnt>
+ 7a4:	10 92 27 01 	sts	0x0127, r1	; 0x800127 <cnt+0x1>
+ 7a8:	10 92 28 01 	sts	0x0128, r1	; 0x800128 <cnt+0x2>
+ 7ac:	10 92 29 01 	sts	0x0129, r1	; 0x800129 <cnt+0x3>
+		
+		opmode=0;
+ 7b0:	10 92 25 01 	sts	0x0125, r1	; 0x800125 <opmode+0x1>
+ 7b4:	10 92 24 01 	sts	0x0124, r1	; 0x800124 <opmode>
+		time=0;
+ 7b8:	10 92 1e 01 	sts	0x011E, r1	; 0x80011e <time>
+ 7bc:	10 92 1f 01 	sts	0x011F, r1	; 0x80011f <time+0x1>
+ 7c0:	10 92 20 01 	sts	0x0120, r1	; 0x800120 <time+0x2>
+ 7c4:	10 92 21 01 	sts	0x0121, r1	; 0x800121 <time+0x3>
+		time_see=0;
+ 7c8:	10 92 18 01 	sts	0x0118, r1	; 0x800118 <__data_end>
+ 7cc:	10 92 19 01 	sts	0x0119, r1	; 0x800119 <__data_end+0x1>
+ 7d0:	10 92 1a 01 	sts	0x011A, r1	; 0x80011a <__data_end+0x2>
+ 7d4:	10 92 1b 01 	sts	0x011B, r1	; 0x80011b <__data_end+0x3>
+ 7d8:	0a c0       	rjmp	.+20     	; 0x7ee <__vector_6+0x11a>
+		
+	}
+	else if(opmode ==4) opmode=0;
+ 7da:	80 91 24 01 	lds	r24, 0x0124	; 0x800124 <opmode>
+ 7de:	90 91 25 01 	lds	r25, 0x0125	; 0x800125 <opmode+0x1>
+ 7e2:	04 97       	sbiw	r24, 0x04	; 4
+ 7e4:	21 f4       	brne	.+8      	; 0x7ee <__vector_6+0x11a>
+ 7e6:	10 92 25 01 	sts	0x0125, r1	; 0x800125 <opmode+0x1>
+ 7ea:	10 92 24 01 	sts	0x0124, r1	; 0x800124 <opmode>
+}
+ 7ee:	9f 91       	pop	r25
+ 7f0:	8f 91       	pop	r24
+ 7f2:	0f 90       	pop	r0
+ 7f4:	0f be       	out	0x3f, r0	; 63
+ 7f6:	0f 90       	pop	r0
+ 7f8:	1f 90       	pop	r1
+ 7fa:	18 95       	reti
+
+000007fc <__vector_7>:
+ISR(INT6_vect)// 리셋버튼 시간 설정 모드시 칸 이동
+{
+ 7fc:	1f 92       	push	r1
+ 7fe:	0f 92       	push	r0
+ 800:	0f b6       	in	r0, 0x3f	; 63
+ 802:	0f 92       	push	r0
+ 804:	11 24       	eor	r1, r1
+ 806:	8f 93       	push	r24
+ 808:	9f 93       	push	r25
+ 80a:	af 93       	push	r26
+ 80c:	bf 93       	push	r27
+	if(opmode == 0)//타이머 시간 설정 모드
+ 80e:	80 91 24 01 	lds	r24, 0x0124	; 0x800124 <opmode>
+ 812:	90 91 25 01 	lds	r25, 0x0125	; 0x800125 <opmode+0x1>
+ 816:	89 2b       	or	r24, r25
+ 818:	89 f4       	brne	.+34     	; 0x83c <__vector_7+0x40>
+	{
+		opmode = 2;
+ 81a:	82 e0       	ldi	r24, 0x02	; 2
+ 81c:	90 e0       	ldi	r25, 0x00	; 0
+ 81e:	90 93 25 01 	sts	0x0125, r25	; 0x800125 <opmode+0x1>
+ 822:	80 93 24 01 	sts	0x0124, r24	; 0x800124 <opmode>
+		select = 3;
+ 826:	83 e0       	ldi	r24, 0x03	; 3
+ 828:	90 e0       	ldi	r25, 0x00	; 0
+ 82a:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 82e:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+		state = 0;
+ 832:	10 92 23 01 	sts	0x0123, r1	; 0x800123 <state+0x1>
+ 836:	10 92 22 01 	sts	0x0122, r1	; 0x800122 <state>
+ 83a:	6e c0       	rjmp	.+220    	; 0x918 <__vector_7+0x11c>
+		//time = time_see;
+	}
+	else if(opmode == 1) //스톱워치중 초기화
+ 83c:	80 91 24 01 	lds	r24, 0x0124	; 0x800124 <opmode>
+ 840:	90 91 25 01 	lds	r25, 0x0125	; 0x800125 <opmode+0x1>
+ 844:	01 97       	sbiw	r24, 0x01	; 1
+ 846:	f1 f4       	brne	.+60     	; 0x884 <__vector_7+0x88>
+	{
+		TCCR1B = 0x00;
+ 848:	1e bc       	out	0x2e, r1	; 46
+		cnt=0;
+ 84a:	10 92 26 01 	sts	0x0126, r1	; 0x800126 <cnt>
+ 84e:	10 92 27 01 	sts	0x0127, r1	; 0x800127 <cnt+0x1>
+ 852:	10 92 28 01 	sts	0x0128, r1	; 0x800128 <cnt+0x2>
+ 856:	10 92 29 01 	sts	0x0129, r1	; 0x800129 <cnt+0x3>
+		
+		opmode = 0;
+ 85a:	10 92 25 01 	sts	0x0125, r1	; 0x800125 <opmode+0x1>
+ 85e:	10 92 24 01 	sts	0x0124, r1	; 0x800124 <opmode>
+		time_see=0;
+ 862:	10 92 18 01 	sts	0x0118, r1	; 0x800118 <__data_end>
+ 866:	10 92 19 01 	sts	0x0119, r1	; 0x800119 <__data_end+0x1>
+ 86a:	10 92 1a 01 	sts	0x011A, r1	; 0x80011a <__data_end+0x2>
+ 86e:	10 92 1b 01 	sts	0x011B, r1	; 0x80011b <__data_end+0x3>
+		time = time_see;
+ 872:	10 92 1e 01 	sts	0x011E, r1	; 0x80011e <time>
+ 876:	10 92 1f 01 	sts	0x011F, r1	; 0x80011f <time+0x1>
+ 87a:	10 92 20 01 	sts	0x0120, r1	; 0x800120 <time+0x2>
+ 87e:	10 92 21 01 	sts	0x0121, r1	; 0x800121 <time+0x3>
+ 882:	4a c0       	rjmp	.+148    	; 0x918 <__vector_7+0x11c>
+		
+	}
+	else if(opmode == 2) //타이머 시간 설정 모드
+ 884:	80 91 24 01 	lds	r24, 0x0124	; 0x800124 <opmode>
+ 888:	90 91 25 01 	lds	r25, 0x0125	; 0x800125 <opmode+0x1>
+ 88c:	02 97       	sbiw	r24, 0x02	; 2
+ 88e:	51 f4       	brne	.+20     	; 0x8a4 <__vector_7+0xa8>
+	{
+		
+		state++;
+ 890:	80 91 22 01 	lds	r24, 0x0122	; 0x800122 <state>
+ 894:	90 91 23 01 	lds	r25, 0x0123	; 0x800123 <state+0x1>
+ 898:	01 96       	adiw	r24, 0x01	; 1
+ 89a:	90 93 23 01 	sts	0x0123, r25	; 0x800123 <state+0x1>
+ 89e:	80 93 22 01 	sts	0x0122, r24	; 0x800122 <state>
+ 8a2:	3a c0       	rjmp	.+116    	; 0x918 <__vector_7+0x11c>
+		
+	}
+	else if(opmode ==3) //타이머 시간 감소시 타이머 설정 모드로
+ 8a4:	80 91 24 01 	lds	r24, 0x0124	; 0x800124 <opmode>
+ 8a8:	90 91 25 01 	lds	r25, 0x0125	; 0x800125 <opmode+0x1>
+ 8ac:	03 97       	sbiw	r24, 0x03	; 3
+ 8ae:	51 f5       	brne	.+84     	; 0x904 <__vector_7+0x108>
+	{
+		TCCR1B = 0x00;
+ 8b0:	1e bc       	out	0x2e, r1	; 46
+		time = time_see;//실제 남은 시간 저장
+ 8b2:	80 91 18 01 	lds	r24, 0x0118	; 0x800118 <__data_end>
+ 8b6:	90 91 19 01 	lds	r25, 0x0119	; 0x800119 <__data_end+0x1>
+ 8ba:	a0 91 1a 01 	lds	r26, 0x011A	; 0x80011a <__data_end+0x2>
+ 8be:	b0 91 1b 01 	lds	r27, 0x011B	; 0x80011b <__data_end+0x3>
+ 8c2:	80 93 1e 01 	sts	0x011E, r24	; 0x80011e <time>
+ 8c6:	90 93 1f 01 	sts	0x011F, r25	; 0x80011f <time+0x1>
+ 8ca:	a0 93 20 01 	sts	0x0120, r26	; 0x800120 <time+0x2>
+ 8ce:	b0 93 21 01 	sts	0x0121, r27	; 0x800121 <time+0x3>
+		cnt=0;//타이머 카운터 초기화
+ 8d2:	10 92 26 01 	sts	0x0126, r1	; 0x800126 <cnt>
+ 8d6:	10 92 27 01 	sts	0x0127, r1	; 0x800127 <cnt+0x1>
+ 8da:	10 92 28 01 	sts	0x0128, r1	; 0x800128 <cnt+0x2>
+ 8de:	10 92 29 01 	sts	0x0129, r1	; 0x800129 <cnt+0x3>
+		
+		opmode=2;//타이머 시간설정
+ 8e2:	82 e0       	ldi	r24, 0x02	; 2
+ 8e4:	90 e0       	ldi	r25, 0x00	; 0
+ 8e6:	90 93 25 01 	sts	0x0125, r25	; 0x800125 <opmode+0x1>
+ 8ea:	80 93 24 01 	sts	0x0124, r24	; 0x800124 <opmode>
+		select = 3;//타이머 3(3~0)번째 자리
+ 8ee:	83 e0       	ldi	r24, 0x03	; 3
+ 8f0:	90 e0       	ldi	r25, 0x00	; 0
+ 8f2:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 8f6:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+		state = 0;//맨 처음 입력 단계
+ 8fa:	10 92 23 01 	sts	0x0123, r1	; 0x800123 <state+0x1>
+ 8fe:	10 92 22 01 	sts	0x0122, r1	; 0x800122 <state>
+ 902:	0a c0       	rjmp	.+20     	; 0x918 <__vector_7+0x11c>
+		//cnt=0;
+		
+	}
+	else if(opmode ==4) opmode=0;
+ 904:	80 91 24 01 	lds	r24, 0x0124	; 0x800124 <opmode>
+ 908:	90 91 25 01 	lds	r25, 0x0125	; 0x800125 <opmode+0x1>
+ 90c:	04 97       	sbiw	r24, 0x04	; 4
+ 90e:	21 f4       	brne	.+8      	; 0x918 <__vector_7+0x11c>
+ 910:	10 92 25 01 	sts	0x0125, r1	; 0x800125 <opmode+0x1>
+ 914:	10 92 24 01 	sts	0x0124, r1	; 0x800124 <opmode>
+ 918:	bf 91       	pop	r27
+ 91a:	af 91       	pop	r26
+ 91c:	9f 91       	pop	r25
+ 91e:	8f 91       	pop	r24
+ 920:	0f 90       	pop	r0
+ 922:	0f be       	out	0x3f, r0	; 63
+ 924:	0f 90       	pop	r0
+ 926:	1f 90       	pop	r1
+ 928:	18 95       	reti
+
+0000092a <SegPort>:
+//int sm = 4;
+int select = 4;//0~3 선택시 깜빡임 초기 4
+int count = 0;
+void SegPort(char *p1, char *p2)
+{
+	PA = p1; PB = p2;//*PA는 포트 출력 작업이 됨
+ 92a:	90 93 05 01 	sts	0x0105, r25	; 0x800105 <PA+0x1>
+ 92e:	80 93 04 01 	sts	0x0104, r24	; 0x800104 <PA>
+ 932:	70 93 03 01 	sts	0x0103, r23	; 0x800103 <PB+0x1>
+ 936:	60 93 02 01 	sts	0x0102, r22	; 0x800102 <PB>
+ 93a:	08 95       	ret
+
+0000093c <seg>:
+}
+void seg(int sel, uint8_t c)
+{
+	//int i = 0;
+	*PB |= 0x0f;
+ 93c:	e0 91 02 01 	lds	r30, 0x0102	; 0x800102 <PB>
+ 940:	f0 91 03 01 	lds	r31, 0x0103	; 0x800103 <PB+0x1>
+ 944:	90 81       	ld	r25, Z
+ 946:	9f 60       	ori	r25, 0x0F	; 15
+ 948:	90 83       	st	Z, r25
+	//PORTE &= ~(1<<(3-sel));
+	*PB &= ~(1<<sel);
+ 94a:	e0 91 02 01 	lds	r30, 0x0102	; 0x800102 <PB>
+ 94e:	f0 91 03 01 	lds	r31, 0x0103	; 0x800103 <PB+0x1>
+ 952:	90 81       	ld	r25, Z
+ 954:	21 e0       	ldi	r18, 0x01	; 1
+ 956:	30 e0       	ldi	r19, 0x00	; 0
+ 958:	02 c0       	rjmp	.+4      	; 0x95e <seg+0x22>
+ 95a:	22 0f       	add	r18, r18
+ 95c:	33 1f       	adc	r19, r19
+ 95e:	8a 95       	dec	r24
+ 960:	e2 f7       	brpl	.-8      	; 0x95a <seg+0x1e>
+ 962:	20 95       	com	r18
+ 964:	29 23       	and	r18, r25
+ 966:	20 83       	st	Z, r18
+	*PA = c;
+ 968:	e0 91 04 01 	lds	r30, 0x0104	; 0x800104 <PA>
+ 96c:	f0 91 05 01 	lds	r31, 0x0105	; 0x800105 <PA+0x1>
+ 970:	60 83       	st	Z, r22
+ 972:	8f e1       	ldi	r24, 0x1F	; 31
+ 974:	9e e4       	ldi	r25, 0x4E	; 78
+ 976:	01 97       	sbiw	r24, 0x01	; 1
+ 978:	f1 f7       	brne	.-4      	; 0x976 <seg+0x3a>
+ 97a:	00 c0       	rjmp	.+0      	; 0x97c <seg+0x40>
+ 97c:	00 00       	nop
+ 97e:	08 95       	ret
+
+00000980 <FND_4>:
+	//_delay_ms(100);
+	
+}
+
+void FND_4(char *inf) // segment Image 배열
+{
+ 980:	0f 93       	push	r16
+ 982:	1f 93       	push	r17
+ 984:	cf 93       	push	r28
+ 986:	df 93       	push	r29
+ 988:	8c 01       	movw	r16, r24
+	//for(int i = 0; i< sm ; i++)
+	for(int i = 0; i< 4 ; i++)
+ 98a:	c0 e0       	ldi	r28, 0x00	; 0
+ 98c:	d0 e0       	ldi	r29, 0x00	; 0
+ 98e:	30 c0       	rjmp	.+96     	; 0x9f0 <FND_4+0x70>
+	{
+		if (select == i)//해당 자릿수가 되었을 때
+ 990:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 994:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 998:	c8 17       	cp	r28, r24
+ 99a:	d9 07       	cpc	r29, r25
+ 99c:	11 f5       	brne	.+68     	; 0x9e2 <FND_4+0x62>
+		{
+			if((count++/30)%2)//100이 넘으면
+ 99e:	80 91 2a 01 	lds	r24, 0x012A	; 0x80012a <count>
+ 9a2:	90 91 2b 01 	lds	r25, 0x012B	; 0x80012b <count+0x1>
+ 9a6:	9c 01       	movw	r18, r24
+ 9a8:	2f 5f       	subi	r18, 0xFF	; 255
+ 9aa:	3f 4f       	sbci	r19, 0xFF	; 255
+ 9ac:	30 93 2b 01 	sts	0x012B, r19	; 0x80012b <count+0x1>
+ 9b0:	20 93 2a 01 	sts	0x012A, r18	; 0x80012a <count>
+ 9b4:	6e e1       	ldi	r22, 0x1E	; 30
+ 9b6:	70 e0       	ldi	r23, 0x00	; 0
+ 9b8:	a2 d0       	rcall	.+324    	; 0xafe <__divmodhi4>
+ 9ba:	60 ff       	sbrs	r22, 0
+ 9bc:	18 c0       	rjmp	.+48     	; 0x9ee <FND_4+0x6e>
+			{
+				//count = 0;//초기화
+				seg(i, *(inf+i));//출력
+ 9be:	f8 01       	movw	r30, r16
+ 9c0:	ec 0f       	add	r30, r28
+ 9c2:	fd 1f       	adc	r31, r29
+ 9c4:	60 81       	ld	r22, Z
+ 9c6:	ce 01       	movw	r24, r28
+ 9c8:	b9 df       	rcall	.-142    	; 0x93c <seg>
+				if(count>10000) count = 0;
+ 9ca:	80 91 2a 01 	lds	r24, 0x012A	; 0x80012a <count>
+ 9ce:	90 91 2b 01 	lds	r25, 0x012B	; 0x80012b <count+0x1>
+ 9d2:	81 31       	cpi	r24, 0x11	; 17
+ 9d4:	97 42       	sbci	r25, 0x27	; 39
+ 9d6:	5c f0       	brlt	.+22     	; 0x9ee <FND_4+0x6e>
+ 9d8:	10 92 2b 01 	sts	0x012B, r1	; 0x80012b <count+0x1>
+ 9dc:	10 92 2a 01 	sts	0x012A, r1	; 0x80012a <count>
+			}
+			continue;	//100 안넘으면 넘기기
+ 9e0:	06 c0       	rjmp	.+12     	; 0x9ee <FND_4+0x6e>
+		}
+		seg(i, *(inf+i));
+ 9e2:	f8 01       	movw	r30, r16
+ 9e4:	ec 0f       	add	r30, r28
+ 9e6:	fd 1f       	adc	r31, r29
+ 9e8:	60 81       	ld	r22, Z
+ 9ea:	ce 01       	movw	r24, r28
+ 9ec:	a7 df       	rcall	.-178    	; 0x93c <seg>
+}
+
+void FND_4(char *inf) // segment Image 배열
+{
+	//for(int i = 0; i< sm ; i++)
+	for(int i = 0; i< 4 ; i++)
+ 9ee:	21 96       	adiw	r28, 0x01	; 1
+ 9f0:	c4 30       	cpi	r28, 0x04	; 4
+ 9f2:	d1 05       	cpc	r29, r1
+ 9f4:	6c f2       	brlt	.-102    	; 0x990 <FND_4+0x10>
+			continue;	//100 안넘으면 넘기기
+		}
+		seg(i, *(inf+i));
+	}
+	
+}
+ 9f6:	df 91       	pop	r29
+ 9f8:	cf 91       	pop	r28
+ 9fa:	1f 91       	pop	r17
+ 9fc:	0f 91       	pop	r16
+ 9fe:	08 95       	ret
+
+00000a00 <SegDisp>:
+//문자열 고려서 안전영역 고려
+//정적변수 영역에 부여
+char* SegDisp(unsigned long num)//10진수 정수 ==> 16진수 문자열로 변환 : 65535 ==> 0xFFFF, 56506 ==> 0xDCBA
+{								//16비트 세그문트 이미지 배열
+ a00:	4f 92       	push	r4
+ a02:	5f 92       	push	r5
+ a04:	6f 92       	push	r6
+ a06:	7f 92       	push	r7
+ a08:	8f 92       	push	r8
+ a0a:	9f 92       	push	r9
+ a0c:	af 92       	push	r10
+ a0e:	bf 92       	push	r11
+ a10:	cf 92       	push	r12
+ a12:	df 92       	push	r13
+ a14:	ef 92       	push	r14
+ a16:	ff 92       	push	r15
+ a18:	cf 93       	push	r28
+ a1a:	df 93       	push	r29
+ a1c:	cd b7       	in	r28, 0x3d	; 61
+ a1e:	de b7       	in	r29, 0x3e	; 62
+ a20:	28 97       	sbiw	r28, 0x08	; 8
+ a22:	0f b6       	in	r0, 0x3f	; 63
+ a24:	f8 94       	cli
+ a26:	de bf       	out	0x3e, r29	; 62
+ a28:	0f be       	out	0x3f, r0	; 63
+ a2a:	cd bf       	out	0x3d, r28	; 61
+// 	DDRD |= 0xff;
+// 	DDRE |= 0x0f;
+	num %= 6000;
+ a2c:	20 e7       	ldi	r18, 0x70	; 112
+ a2e:	37 e1       	ldi	r19, 0x17	; 23
+ a30:	40 e0       	ldi	r20, 0x00	; 0
+ a32:	50 e0       	ldi	r21, 0x00	; 0
+ a34:	77 d0       	rcall	.+238    	; 0xb24 <__udivmodsi4>
+ a36:	2b 01       	movw	r4, r22
+ a38:	3c 01       	movw	r6, r24
+	int n1 = num%10;			//A 초에 대해서 10의 나머지
+ a3a:	0f 2e       	mov	r0, r31
+ a3c:	fa e0       	ldi	r31, 0x0A	; 10
+ a3e:	cf 2e       	mov	r12, r31
+ a40:	d1 2c       	mov	r13, r1
+ a42:	e1 2c       	mov	r14, r1
+ a44:	f1 2c       	mov	r15, r1
+ a46:	f0 2d       	mov	r31, r0
+ a48:	a7 01       	movw	r20, r14
+ a4a:	96 01       	movw	r18, r12
+ a4c:	6b d0       	rcall	.+214    	; 0xb24 <__udivmodsi4>
+ a4e:	4b 01       	movw	r8, r22
+ a50:	5c 01       	movw	r10, r24
+	int n2 = (num%60)/10;		//B 초에 대해서 60으로 나눈 나머지의 10의 자릿수
+ a52:	c3 01       	movw	r24, r6
+ a54:	b2 01       	movw	r22, r4
+ a56:	2c e3       	ldi	r18, 0x3C	; 60
+ a58:	30 e0       	ldi	r19, 0x00	; 0
+ a5a:	40 e0       	ldi	r20, 0x00	; 0
+ a5c:	50 e0       	ldi	r21, 0x00	; 0
+ a5e:	62 d0       	rcall	.+196    	; 0xb24 <__udivmodsi4>
+ a60:	29 83       	std	Y+1, r18	; 0x01
+ a62:	3a 83       	std	Y+2, r19	; 0x02
+ a64:	4b 83       	std	Y+3, r20	; 0x03
+ a66:	5c 83       	std	Y+4, r21	; 0x04
+ a68:	a7 01       	movw	r20, r14
+ a6a:	96 01       	movw	r18, r12
+ a6c:	5b d0       	rcall	.+182    	; 0xb24 <__udivmodsi4>
+ a6e:	2d 83       	std	Y+5, r18	; 0x05
+ a70:	3e 83       	std	Y+6, r19	; 0x06
+ a72:	4f 83       	std	Y+7, r20	; 0x07
+ a74:	58 87       	std	Y+8, r21	; 0x08
+	int n3 = (num/60)%10;		//C 60으로 나눠 분을 만든 것의 1의 자리수
+ a76:	69 81       	ldd	r22, Y+1	; 0x01
+ a78:	7a 81       	ldd	r23, Y+2	; 0x02
+ a7a:	8b 81       	ldd	r24, Y+3	; 0x03
+ a7c:	9c 81       	ldd	r25, Y+4	; 0x04
+ a7e:	a7 01       	movw	r20, r14
+ a80:	96 01       	movw	r18, r12
+ a82:	50 d0       	rcall	.+160    	; 0xb24 <__udivmodsi4>
+ a84:	69 83       	std	Y+1, r22	; 0x01
+ a86:	7a 83       	std	Y+2, r23	; 0x02
+ a88:	8b 83       	std	Y+3, r24	; 0x03
+ a8a:	9c 83       	std	Y+4, r25	; 0x04
+	int n4 = (num/60)/10;		//D 60으로 나눠 분으 만든 것의 10의 자릿수
+ a8c:	c3 01       	movw	r24, r6
+ a8e:	b2 01       	movw	r22, r4
+ a90:	28 e5       	ldi	r18, 0x58	; 88
+ a92:	32 e0       	ldi	r19, 0x02	; 2
+ a94:	40 e0       	ldi	r20, 0x00	; 0
+ a96:	50 e0       	ldi	r21, 0x00	; 0
+ a98:	45 d0       	rcall	.+138    	; 0xb24 <__udivmodsi4>
+			if(!(num/10))n2=17;
+		}
+	}
+	sm=(num>999) ? 4 : (num > 99) ? 3: (num> 9) ? 2: 1;
+	*/
+	arr[0] = digit[n1];//char 1byte cast() LED문자로 표현
+ a9a:	f4 01       	movw	r30, r8
+ a9c:	ea 5f       	subi	r30, 0xFA	; 250
+ a9e:	fe 4f       	sbci	r31, 0xFE	; 254
+ aa0:	80 81       	ld	r24, Z
+ aa2:	ec e2       	ldi	r30, 0x2C	; 44
+ aa4:	f1 e0       	ldi	r31, 0x01	; 1
+ aa6:	80 83       	st	Z, r24
+	arr[1] = digit[n2];
+ aa8:	ad 81       	ldd	r26, Y+5	; 0x05
+ aaa:	be 81       	ldd	r27, Y+6	; 0x06
+ aac:	aa 5f       	subi	r26, 0xFA	; 250
+ aae:	be 4f       	sbci	r27, 0xFE	; 254
+ ab0:	8c 91       	ld	r24, X
+ ab2:	81 83       	std	Z+1, r24	; 0x01
+	arr[2] = digit[n3] | 0x80;
+ ab4:	a9 81       	ldd	r26, Y+1	; 0x01
+ ab6:	ba 81       	ldd	r27, Y+2	; 0x02
+ ab8:	aa 5f       	subi	r26, 0xFA	; 250
+ aba:	be 4f       	sbci	r27, 0xFE	; 254
+ abc:	8c 91       	ld	r24, X
+ abe:	80 68       	ori	r24, 0x80	; 128
+ ac0:	82 83       	std	Z+2, r24	; 0x02
+	arr[3] = digit[n4];
+ ac2:	d9 01       	movw	r26, r18
+ ac4:	aa 5f       	subi	r26, 0xFA	; 250
+ ac6:	be 4f       	sbci	r27, 0xFE	; 254
+ ac8:	8c 91       	ld	r24, X
+	//+, - 빠름
+	//* 실수 연산 여러 클럭 사용
+	//'/' 연산 여러 클럭 사용
+	FND_4(arr);
+ aca:	83 83       	std	Z+3, r24	; 0x03
+ acc:	cf 01       	movw	r24, r30
+ ace:	58 df       	rcall	.-336    	; 0x980 <FND_4>
+	return arr;
+	
+}
+ ad0:	8c e2       	ldi	r24, 0x2C	; 44
+ ad2:	91 e0       	ldi	r25, 0x01	; 1
+ ad4:	28 96       	adiw	r28, 0x08	; 8
+ ad6:	0f b6       	in	r0, 0x3f	; 63
+ ad8:	f8 94       	cli
+ ada:	de bf       	out	0x3e, r29	; 62
+ adc:	0f be       	out	0x3f, r0	; 63
+ ade:	cd bf       	out	0x3d, r28	; 61
+ ae0:	df 91       	pop	r29
+ ae2:	cf 91       	pop	r28
+ ae4:	ff 90       	pop	r15
+ ae6:	ef 90       	pop	r14
+ ae8:	df 90       	pop	r13
+ aea:	cf 90       	pop	r12
+ aec:	bf 90       	pop	r11
+ aee:	af 90       	pop	r10
+ af0:	9f 90       	pop	r9
+ af2:	8f 90       	pop	r8
+ af4:	7f 90       	pop	r7
+ af6:	6f 90       	pop	r6
+ af8:	5f 90       	pop	r5
+ afa:	4f 90       	pop	r4
+ afc:	08 95       	ret
+
+00000afe <__divmodhi4>:
+ afe:	97 fb       	bst	r25, 7
+ b00:	07 2e       	mov	r0, r23
+ b02:	16 f4       	brtc	.+4      	; 0xb08 <__divmodhi4+0xa>
+ b04:	00 94       	com	r0
+ b06:	06 d0       	rcall	.+12     	; 0xb14 <__divmodhi4_neg1>
+ b08:	77 fd       	sbrc	r23, 7
+ b0a:	08 d0       	rcall	.+16     	; 0xb1c <__divmodhi4_neg2>
+ b0c:	36 d0       	rcall	.+108    	; 0xb7a <__udivmodhi4>
+ b0e:	07 fc       	sbrc	r0, 7
+ b10:	05 d0       	rcall	.+10     	; 0xb1c <__divmodhi4_neg2>
+ b12:	3e f4       	brtc	.+14     	; 0xb22 <__divmodhi4_exit>
+
+00000b14 <__divmodhi4_neg1>:
+ b14:	90 95       	com	r25
+ b16:	81 95       	neg	r24
+ b18:	9f 4f       	sbci	r25, 0xFF	; 255
+ b1a:	08 95       	ret
+
+00000b1c <__divmodhi4_neg2>:
+ b1c:	70 95       	com	r23
+ b1e:	61 95       	neg	r22
+ b20:	7f 4f       	sbci	r23, 0xFF	; 255
+
+00000b22 <__divmodhi4_exit>:
+ b22:	08 95       	ret
+
+00000b24 <__udivmodsi4>:
+ b24:	a1 e2       	ldi	r26, 0x21	; 33
+ b26:	1a 2e       	mov	r1, r26
+ b28:	aa 1b       	sub	r26, r26
+ b2a:	bb 1b       	sub	r27, r27
+ b2c:	fd 01       	movw	r30, r26
+ b2e:	0d c0       	rjmp	.+26     	; 0xb4a <__udivmodsi4_ep>
+
+00000b30 <__udivmodsi4_loop>:
+ b30:	aa 1f       	adc	r26, r26
+ b32:	bb 1f       	adc	r27, r27
+ b34:	ee 1f       	adc	r30, r30
+ b36:	ff 1f       	adc	r31, r31
+ b38:	a2 17       	cp	r26, r18
+ b3a:	b3 07       	cpc	r27, r19
+ b3c:	e4 07       	cpc	r30, r20
+ b3e:	f5 07       	cpc	r31, r21
+ b40:	20 f0       	brcs	.+8      	; 0xb4a <__udivmodsi4_ep>
+ b42:	a2 1b       	sub	r26, r18
+ b44:	b3 0b       	sbc	r27, r19
+ b46:	e4 0b       	sbc	r30, r20
+ b48:	f5 0b       	sbc	r31, r21
+
+00000b4a <__udivmodsi4_ep>:
+ b4a:	66 1f       	adc	r22, r22
+ b4c:	77 1f       	adc	r23, r23
+ b4e:	88 1f       	adc	r24, r24
+ b50:	99 1f       	adc	r25, r25
+ b52:	1a 94       	dec	r1
+ b54:	69 f7       	brne	.-38     	; 0xb30 <__udivmodsi4_loop>
+ b56:	60 95       	com	r22
+ b58:	70 95       	com	r23
+ b5a:	80 95       	com	r24
+ b5c:	90 95       	com	r25
+ b5e:	9b 01       	movw	r18, r22
+ b60:	ac 01       	movw	r20, r24
+ b62:	bd 01       	movw	r22, r26
+ b64:	cf 01       	movw	r24, r30
+ b66:	08 95       	ret
+
+00000b68 <__tablejump2__>:
+ b68:	ee 0f       	add	r30, r30
+ b6a:	ff 1f       	adc	r31, r31
+ b6c:	00 24       	eor	r0, r0
+ b6e:	00 1c       	adc	r0, r0
+ b70:	0b be       	out	0x3b, r0	; 59
+ b72:	07 90       	elpm	r0, Z+
+ b74:	f6 91       	elpm	r31, Z
+ b76:	e0 2d       	mov	r30, r0
+ b78:	09 94       	ijmp
+
+00000b7a <__udivmodhi4>:
+ b7a:	aa 1b       	sub	r26, r26
+ b7c:	bb 1b       	sub	r27, r27
+ b7e:	51 e1       	ldi	r21, 0x11	; 17
+ b80:	07 c0       	rjmp	.+14     	; 0xb90 <__udivmodhi4_ep>
+
+00000b82 <__udivmodhi4_loop>:
+ b82:	aa 1f       	adc	r26, r26
+ b84:	bb 1f       	adc	r27, r27
+ b86:	a6 17       	cp	r26, r22
+ b88:	b7 07       	cpc	r27, r23
+ b8a:	10 f0       	brcs	.+4      	; 0xb90 <__udivmodhi4_ep>
+ b8c:	a6 1b       	sub	r26, r22
+ b8e:	b7 0b       	sbc	r27, r23
+
+00000b90 <__udivmodhi4_ep>:
+ b90:	88 1f       	adc	r24, r24
+ b92:	99 1f       	adc	r25, r25
+ b94:	5a 95       	dec	r21
+ b96:	a9 f7       	brne	.-22     	; 0xb82 <__udivmodhi4_loop>
+ b98:	80 95       	com	r24
+ b9a:	90 95       	com	r25
+ b9c:	bc 01       	movw	r22, r24
+ b9e:	cd 01       	movw	r24, r26
+ ba0:	08 95       	ret
+
+00000ba2 <_exit>:
+ ba2:	f8 94       	cli
+
+00000ba4 <__stop_program>:
+ ba4:	ff cf       	rjmp	.-2      	; 0xba4 <__stop_program>
